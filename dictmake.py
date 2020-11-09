@@ -36,8 +36,10 @@ def study(cardFile, questionsFile):
         cards = json.loads(infile.read())
     with open(questionsFile,'r') as infile:
         questions = json.loads(infile.read())
-    while True:
-        ask(getCard(cards), getQuestion(questions), cardFile, cards)
+    goAgain = True
+    while goAgain:
+        goAgain = ask(getCard(cards), getQuestion(questions), cardFile, cards)
+    quitStudy(cardFile, cards)
 
 def ask(card, question, cardFile, cards):
     front = []
@@ -48,9 +50,9 @@ def ask(card, question, cardFile, cards):
     for field in question['answer']:
         back.append(field + ':\t' + card[field])
     print('\n'.join(front))
-    isQuit = input('\n----------\n')
+    isQuit = input('\n<enter to see answer, q to quit>\n')
     if isQuit.lower() == 'q':
-        quitStudy(cardFile, cards)
+        return False
     else:
         print('\n'.join(back))
     if getCorrect():
@@ -60,7 +62,8 @@ def ask(card, question, cardFile, cards):
     timePasses(cards)
     print('mastery: ', card['mastery'])
     print('new wait: ', card['wait'])
-    input('---')
+    input('<enter to continue>')
+    return True
 
 def timePasses(cards):
     for card in cards:
