@@ -2,32 +2,36 @@ import json, random, sys, os
 import datamunger
 
 def cardBuilder(csvFile, cardfile='my-cards.json', sep='\t'):
-    with open(csvFile, 'r') as infile:
-        isHeader = True
-        header = None
-        rank = 0
-        mastery = 0
-        wait = 0
-        dataDict = []
-        for line in infile:
-            line = line.replace('\n', '')
-            if isHeader:
-                header = line.split(sep)
-                isHeader = False
-                continue
-            entry = {}
-            data = line.split(sep)
-            for i in range(0, len(header)):
-                entry[header[i]] = data[i]
-            rank = rank + 1
-            entry['rank'] = rank
-            entry['mastery'] = mastery
-            entry['wait'] = 0
-            dataDict.append(entry)
-        print('made ', len(dataDict), ' cards')
-        with open(cardfile, 'w') as outfile:
-            jsonString = json.dumps(dataDict, indent=4)
-            outfile.write(jsonString)
+    try:
+        with open(csvFile, 'r') as infile:
+            isHeader = True
+            header = None
+            rank = 0
+            mastery = 0
+            wait = 0
+            dataDict = []
+            for line in infile:
+                line = line.replace('\n', '')
+                if isHeader:
+                    header = line.split(sep)
+                    isHeader = False
+                    continue
+                entry = {}
+                data = line.split(sep)
+                for i in range(0, len(header)):
+                    entry[header[i]] = data[i]
+                rank = rank + 1
+                entry['rank'] = rank
+                entry['mastery'] = mastery
+                entry['wait'] = 0
+                dataDict.append(entry)
+            with open(cardfile, 'w') as outfile:
+                jsonString = json.dumps(dataDict, indent=4)
+                outfile.write(jsonString)
+            return 'Success! Made ' + str(len(dataDict)) + ' cards.'
+    except Exception as e:
+        return e
+
 
 def study(cardFile, questionsFile):
     cards = None
@@ -103,9 +107,11 @@ def getCard(cardData):
             return cardData[i]
     print('hmm, did not find any cards with wait 0 - ask brian to fix')
 
+'''
 char_cards = 'cards-and-questions/char-cards.json'
 char_questions = 'cards-and-questions/char-questions.json'
 study(char_cards, char_questions)
+'''
 #cardBuilder('enriched-joyou')
 #makeJoyou()
 #enrichJoyou()
