@@ -2,9 +2,10 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
 from tkinter import messagebox
-import json
+import json, random
 
-def study(cardFile, questionsFile):
+'''
+def study2(cardFile, questionsFile):
     cards = None
     questions = None
     with open(cardFile,'r') as infile:
@@ -39,6 +40,7 @@ def ask(card, question, cardFile, cards):
     print('new wait: ', card['wait'])
     input('<enter to continue>')
     return True
+'''
 
 def timePasses(cards):
     for card in cards:
@@ -78,11 +80,11 @@ def getCard(cardData):
             return cardData[i]
     print('hmm, did not find any cards with wait 0 - ask brian to fix')
 
-def loadCards(cardFile):
-    return json.loads(cardFile)
-
-def loadQuestions(questionFile):
-    return json.loads(questionFile)
+def loadjson(jsonfile):
+    data = None
+    with open(jsonfile, 'r') as infile:
+        data = infile.read()
+    return json.loads(data)
 
 def chooseFile(entry):
     filename = tk.filedialog.askopenfilename(title = 'Select file to make cards from')
@@ -100,6 +102,10 @@ def packer(thinglist, padx=0, pady=0, toppady=0):
             fill = 'x'
         thing.pack(padx=padx, pady=pady, fill=fill)
 
+def hider(thinglist):
+    for thing in thinglist:
+        thing.pack_forget()
+
 def init(win):
     win.geometry('300x300')
     iFrame = tk.Frame(win)
@@ -116,9 +122,25 @@ def init(win):
         command=lambda:chooseFile(cqEntry))
     sep = ttk.Separator(iFrame)
     startButton = tk.Button(iFrame, text='Start study',
-        command=lambda:print(ccEntry.get(), cqEntry.get()))
-    packer([iLabel, ccEntry, ccButton, ccFrame, cqEntry, cqButton, cqFrame,
-        iFrame, sep, startButton], pady=7, toppady=50)
+        command=lambda:study(win, ccEntry.get(), cqEntry.get(), initThings))
+    initThings = [iLabel, ccEntry, ccButton, ccFrame, cqEntry, cqButton, cqFrame,
+        iFrame, sep, startButton]
+    packer(initThings, pady=7)
+
+def ask(win, cards, questions):
+    card = getCard(cards)
+    question = getQuestion(questions)
+    print(card, '\n', question)
+
+
+def study(win, cardfile, questionfile, initThings):
+    cards = loadjson(cardfile)
+    questions = loadjson(questionfile)
+    hider(initThings)
+    askB = tk.Button(win,text='ask',
+        command=lambda:ask(win,cards,questions))
+    askB.pack()
+
 
 def main():
     win = tk.Tk()
