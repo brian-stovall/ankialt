@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
 from tkinter import messagebox
-import json, random
+import json, random, sys
 
 '''
 def study2(cardFile, questionsFile):
@@ -65,10 +65,9 @@ def quitStudy(cardFile, cards):
     with open(cardFile + '-backup', 'w') as backup:
         with open(cardFile,'r') as source:
             backup.write(source.read())
-            print('wrote backup to', backup)
     with open(cardFile,'w') as outfile:
         outfile.write(json.dumps(cards, indent=4))
-    print('wrote state, bye!')
+    messagebox.showinfo('Bye now!', 'wrote backup to' + str(backup.name) + ' and saved your work... bye!')
     sys.exit(0)
 
 def getQuestion(questions):
@@ -127,32 +126,48 @@ def init(win):
         iFrame, sep, startButton]
     packer(initThings, pady=7)
 
+
 def makeline(parentframe, field, card):
     lineframe = tk.Frame(parentframe)
     font = 'arial 15 bold'
     thelabel = tk.Label(lineframe, text=field, font=font)
-    thedata = tk.Label(lineframe, text=str(card[field]))
+    thedata = tk.Label(lineframe, text=str(card[field]), font=font)
     thelabel.pack(side='left')
     thedata.pack(side='right')
     lineframe.pack()
     #packer([thelabel, thedata, lineframe])
 
 def ask(win, cards, questions):
+    askFrame = tk.Frame(win)
+    qFrame = tk.Frame(askFrame)
     card = getCard(cards)
     question = getQuestion(questions)
     for field in question['question']:
-        makeline(win, field, card)
-    #TODO hit enter to see answer
+        makeline(qFrame, field, card)
+    qFrame.pack()
+    askFrame.pack()
+    askEntry = tk.Entry(qFrame)
+    askSep = ttk.Separator(qFrame)
+    askSep.pack()
+    answerFrame = tk.Frame(askFrame)
+    for field in question['answer']:
+        makeline(answerFrame, field, card)
+    correctBtn = tk.Button(answerFrame, text='correct', command=lambda: askAgain(askFrame, win, cards, questions))
+    wrongBtn = tk.Button(answerFrame, text='incorrect', command=lambda: askAgain(askFrame, win, cards, questions))
+    correctBtn.pack()
+    wrongBtn.pack()
+    win.bind('<Key>', lambda i: answerFrame.pack())
 
+def askAgain(askFrame, win, cards, questions):
+    askFrame.destroy()
+    ask(win,cards,questions)
 
 def study(win, cardfile, questionfile, initThings):
     cards = loadjson(cardfile)
     questions = loadjson(questionfile)
     hider(initThings)
-    askB = tk.Button(win,text='ask',
-        command=lambda:ask(win,cards,questions))
-    askB.pack()
-
+    win.protocol('WM_DELETE_WINDOW', lambda: quitStudy(cardfile, cards))
+    ask(win,cards,questions)
 
 def main():
     win = tk.Tk()
