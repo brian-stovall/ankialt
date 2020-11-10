@@ -127,10 +127,22 @@ def init(win):
         iFrame, sep, startButton]
     packer(initThings, pady=7)
 
+def makeline(parentframe, field, card):
+    lineframe = tk.Frame(parentframe)
+    font = 'arial 15 bold'
+    thelabel = tk.Label(lineframe, text=field, font=font)
+    thedata = tk.Label(lineframe, text=str(card[field]))
+    thelabel.pack(side='left')
+    thedata.pack(side='right')
+    lineframe.pack()
+    #packer([thelabel, thedata, lineframe])
+
 def ask(win, cards, questions):
     card = getCard(cards)
     question = getQuestion(questions)
-    print(card, '\n', question)
+    for field in question['question']:
+        makeline(win, field, card)
+    #TODO hit enter to see answer
 
 
 def study(win, cardfile, questionfile, initThings):
