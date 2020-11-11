@@ -4,44 +4,6 @@ from tkinter import ttk
 from tkinter import messagebox
 import json, random, sys
 
-'''
-def study2(cardFile, questionsFile):
-    cards = None
-    questions = None
-    with open(cardFile,'r') as infile:
-        cards = json.loads(infile.read())
-    with open(questionsFile,'r') as infile:
-        questions = json.loads(infile.read())
-    goAgain = True
-    while goAgain:
-        goAgain = ask(getCard(cards), getQuestion(questions), cardFile, cards)
-    quitStudy(cardFile, cards)
-
-def ask(card, question, cardFile, cards):
-    front = []
-    back = []
-    os.system('clear')
-    for field in question['question']:
-        front.append(field + ':\t' + card[field])
-    for field in question['answer']:
-        back.append(field + ':\t' + card[field])
-    print('\n'.join(front))
-    isQuit = input('\n<enter to see answer, q to quit>\n')
-    if isQuit.lower() == 'q':
-        return False
-    else:
-        print('\n'.join(back))
-    if getCorrect():
-        masterCard(card)
-    else:
-        failCard(card)
-    timePasses(cards)
-    print('mastery: ', card['mastery'])
-    print('new wait: ', card['wait'])
-    input('<enter to continue>')
-    return True
-'''
-
 def timePasses(cards):
     for card in cards:
         card['wait'] = max(0, card['wait'] - 1)
