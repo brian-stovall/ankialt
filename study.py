@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
 from tkinter import messagebox
-import json, random, sys
+import json, random, sys, os
 
 def timePasses(cards):
     for card in cards:
@@ -67,7 +67,12 @@ def hider(thinglist):
     for thing in thinglist:
         thing.pack_forget()
 
-def init(win):
+def init(win, configfile='quiz-config'):
+    lastcards=''
+    lastquest=''
+    if os.path.exists(configfile):
+        with open(configfile, 'r') as conf_file:
+            lastcards, lastquest = conf_file.read().split('|')
     win.minsize(500,300)
     iFrame = tk.Frame(win)
     iFrame.pady = 150
@@ -75,15 +80,17 @@ def init(win):
         text='Choose a card and question file to begin.')
     ccFrame = tk.Frame(iFrame)
     ccEntry = tk.Entry(ccFrame)
+    ccEntry.insert(0, lastcards)
     ccButton = tk.Button(ccFrame, text='Select cards',
         command=lambda:chooseFile(ccEntry))
     cqFrame = tk.Frame(iFrame)
     cqEntry = tk.Entry(cqFrame)
+    cqEntry.insert(0, lastquest)
     cqButton = tk.Button(cqFrame, text='Select questions',
         command=lambda:chooseFile(cqEntry))
     sep = ttk.Separator(iFrame)
     startButton = tk.Button(iFrame, text='Start study',
-        command=lambda:study(win, ccEntry.get(), cqEntry.get(), initThings))
+        command=lambda:study(win, ccEntry.get(), cqEntry.get(), initThings, configfile))
     initThings = [iLabel, ccEntry, ccButton, ccFrame, cqEntry, cqButton, cqFrame,
         iFrame, sep, startButton]
     packer(initThings, pady=7)
@@ -122,9 +129,9 @@ def ask(win, cards, questions):
     wrongBtn = tk.Button(answerFrame, text='2: incorrect', command=lambda: askAgain(False, card, askFrame, win, cards, questions))
     correctBtn.pack(pady=3)
     wrongBtn.pack(pady=3)
-    win.bind('<Return>', lambda i: answerFrame.pack())
-    win.bind('1', lambda i: correctBtn.invoke())
-    win.bind('2', lambda i: correctBtn.invoke())
+    win.bind('<space>', lambda i: answerFrame.pack())
+    win.bind('<KP_End>', lambda i: correctBtn.invoke())
+    win.bind('<KP_Down>', lambda i: wrongBtn.invoke())
 
 def askAgain(correct, card, askFrame, win, cards, questions):
     timePasses(cards)
@@ -135,7 +142,10 @@ def askAgain(correct, card, askFrame, win, cards, questions):
     askFrame.destroy()
     ask(win,cards,questions)
 
-def study(win, cardfile, questionfile, initThings):
+def study(win, cardfile, questionfile, initThings, configfile):
+    if not os.path.exists(configfile):
+        with open(configfile, 'w') as conf_file:
+            conf_file.write(cardfile+'|'+ questionfile)
     cards = loadjson(cardfile)
     questions = loadjson(questionfile)
     hider(initThings)
