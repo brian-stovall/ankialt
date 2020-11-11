@@ -8,8 +8,8 @@
         "jMeanings": "day/sun/Japan/counter for days",
         "cmeanings": "abbr. for \u65e5\u672c[Ri4 ben3], Japan",
         "rank": 1,
-        "mastery": 3,
-        "wait": 3
+        "mastery": 4,
+        "wait": 5
     },
     {
         "jFreq": "2",
@@ -20,8 +20,8 @@
         "jMeanings": "one/one radical (no.1)",
         "cmeanings": "all/also pr. [yao1] for greater clarity when spelling out numbers digit by digit/one/throughout/as soon as/single/\"one\" radical in Chinese characters (Kangxi radical 1)/a (article)/whole/1/entire",
         "rank": 2,
-        "mastery": 2,
-        "wait": 0
+        "mastery": 3,
+        "wait": 1
     },
     {
         "jFreq": "3",
@@ -33,7 +33,7 @@
         "cmeanings": "surname Guo",
         "rank": 3,
         "mastery": 0,
-        "wait": 7
+        "wait": 3
     },
     {
         "jFreq": "4",
@@ -44,7 +44,7 @@
         "jMeanings": "meeting/meet/party/association/interview/join",
         "cmeanings": "a moment (Taiwan pr. for this sense is [hui3])/association/to see/to meet/CL:\u500b|\u4e2a[ge4]/to gather/union/group/will/to be possible/can/to assemble/to be likely to/to be sure to/to be able to",
         "rank": 4,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
@@ -56,8 +56,8 @@
         "jMeanings": "person",
         "cmeanings": "people/person/man/CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
         "rank": 5,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 1,
+        "wait": 1
     },
     {
         "jFreq": "6",

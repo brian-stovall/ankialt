@@ -106,7 +106,7 @@ def hider(thinglist):
         thing.pack_forget()
 
 def init(win):
-    win.geometry('300x300')
+    win.minsize(500,300)
     iFrame = tk.Frame(win)
     iFrame.pady = 150
     iLabel = tk.Label(iFrame,
@@ -130,12 +130,16 @@ def init(win):
 def makeline(parentframe, field, card):
     lineframe = tk.Frame(parentframe)
     font = 'arial 15 bold'
-    thelabel = tk.Label(lineframe, text=field, font=font)
-    thedata = tk.Label(lineframe, text=str(card[field]), font=font)
-    thelabel.pack(side='left')
+    #thelabel = tk.Label(lineframe, text=field, font=font)
+    dataText=field + ': ' + str(card[field])
+    maxlen = 40
+    if len(dataText) > maxlen:
+        dataText = '\n'.join([dataText[i:i+maxlen] \
+            for i in range(0, len(dataText), maxlen)])
+    thedata = tk.Label(lineframe, text=dataText, font=font)
+    #thelabel.pack(side='left')
     thedata.pack(side='right')
-    lineframe.pack()
-    #packer([thelabel, thedata, lineframe])
+    lineframe.pack(pady=3)
 
 def ask(win, cards, questions):
     askFrame = tk.Frame(win)
@@ -148,17 +152,24 @@ def ask(win, cards, questions):
     askFrame.pack()
     askEntry = tk.Entry(qFrame)
     askSep = ttk.Separator(qFrame)
-    askSep.pack()
+    askSep.pack(fill='x')
     answerFrame = tk.Frame(askFrame)
     for field in question['answer']:
         makeline(answerFrame, field, card)
-    correctBtn = tk.Button(answerFrame, text='correct', command=lambda: askAgain(askFrame, win, cards, questions))
-    wrongBtn = tk.Button(answerFrame, text='incorrect', command=lambda: askAgain(askFrame, win, cards, questions))
-    correctBtn.pack()
-    wrongBtn.pack()
-    win.bind('<Key>', lambda i: answerFrame.pack())
+    correctBtn = tk.Button(answerFrame, text='1: correct', command=lambda: askAgain(True, card, askFrame, win, cards, questions))
+    wrongBtn = tk.Button(answerFrame, text='2: incorrect', command=lambda: askAgain(False, card, askFrame, win, cards, questions))
+    correctBtn.pack(pady=3)
+    wrongBtn.pack(pady=3)
+    win.bind('<Return>', lambda i: answerFrame.pack())
+    win.bind('1', lambda i: correctBtn.invoke())
+    win.bind('2', lambda i: correctBtn.invoke())
 
-def askAgain(askFrame, win, cards, questions):
+def askAgain(correct, card, askFrame, win, cards, questions):
+    timePasses(cards)
+    if correct:
+        masterCard(card)
+    else:
+        failCard(card)
     askFrame.destroy()
     ask(win,cards,questions)
 
@@ -172,7 +183,7 @@ def study(win, cardfile, questionfile, initThings):
 def main():
     win = tk.Tk()
     win.title('Study time')
-    win.geometry('600x600')
+    #win.geometry('1200x800')
     init(win)
     win.mainloop()
     '''
