@@ -13,7 +13,7 @@ def masterCard(card):
     card['wait'] = card['mastery'] + 1 #for timePasses
 
 def failCard(card):
-    card['wait'] = random.choice(range(5,11))
+    card['wait'] = random.choice(range(1,5))
     card['mastery'] = 0
 
 def getCorrect():
@@ -94,6 +94,7 @@ def init(win, configfile='quiz-config'):
     initThings = [iLabel, ccEntry, ccButton, ccFrame, cqEntry, cqButton, cqFrame,
         iFrame, sep, startButton]
     packer(initThings, pady=7)
+    startButton.focus_set()
 
 
 def makeline(parentframe, field, card):
@@ -112,6 +113,11 @@ def makeline(parentframe, field, card):
 
 def ask(win, cards, questions):
     askFrame = tk.Frame(win)
+    typeframe = tk.Frame(askFrame)
+    typeEntry = tk.Entry(typeframe)
+    typeEntry.pack()
+    typeframe.pack()
+    typeEntry.focus_set()
     qFrame = tk.Frame(askFrame)
     card = getCard(cards)
     question = getQuestion(questions)
@@ -119,7 +125,7 @@ def ask(win, cards, questions):
         makeline(qFrame, field, card)
     qFrame.pack()
     askFrame.pack()
-    askEntry = tk.Entry(qFrame)
+    #askEntry = tk.Entry(qFrame)
     askSep = ttk.Separator(qFrame)
     askSep.pack(fill='x')
     answerFrame = tk.Frame(askFrame)
@@ -129,9 +135,14 @@ def ask(win, cards, questions):
     wrongBtn = tk.Button(answerFrame, text='2: incorrect', command=lambda: askAgain(False, card, askFrame, win, cards, questions))
     correctBtn.pack(pady=3)
     wrongBtn.pack(pady=3)
+    win.bind('<Return>', lambda i: answerFrame.pack())
+    win.bind('1', lambda i: correctBtn.invoke())
+    win.bind('2', lambda i: wrongBtn.invoke())
+    '''
     win.bind('<space>', lambda i: answerFrame.pack())
     win.bind('<KP_End>', lambda i: correctBtn.invoke())
     win.bind('<KP_Down>', lambda i: wrongBtn.invoke())
+    '''
 
 def askAgain(correct, card, askFrame, win, cards, questions):
     timePasses(cards)
