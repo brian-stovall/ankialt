@@ -94,6 +94,7 @@ def init(win, configfile='quiz-config'):
     initThings = [iLabel, ccEntry, ccButton, ccFrame, cqEntry, cqButton, cqFrame,
         iFrame, sep, startButton]
     packer(initThings, pady=7)
+    win.bind('<Return>', lambda i: startButton.invoke())
     startButton.focus_set()
 
 
@@ -132,17 +133,21 @@ def ask(win, cards, questions):
     for field in question['answer']:
         makeline(answerFrame, field, card)
     correctBtn = tk.Button(answerFrame, text='1: correct', command=lambda: askAgain(True, card, askFrame, win, cards, questions))
-    wrongBtn = tk.Button(answerFrame, text='2: incorrect', command=lambda: askAgain(False, card, askFrame, win, cards, questions))
+    wrongBtn = tk.Button(answerFrame, text='4: incorrect', command=lambda: askAgain(False, card, askFrame, win, cards, questions))
     correctBtn.pack(pady=3)
     wrongBtn.pack(pady=3)
-    win.bind('<Return>', lambda i: answerFrame.pack())
+    win.bind('<Return>', lambda i: showAnswer(answerFrame, correctBtn))
     win.bind('1', lambda i: correctBtn.invoke())
-    win.bind('2', lambda i: wrongBtn.invoke())
+    win.bind('4', lambda i: wrongBtn.invoke())
     '''
     win.bind('<space>', lambda i: answerFrame.pack())
     win.bind('<KP_End>', lambda i: correctBtn.invoke())
     win.bind('<KP_Down>', lambda i: wrongBtn.invoke())
     '''
+
+def showAnswer(aFrame, correctBtn):
+    aFrame.pack()
+    #correctBtn.focus_set()
 
 def askAgain(correct, card, askFrame, win, cards, questions):
     timePasses(cards)
@@ -154,6 +159,7 @@ def askAgain(correct, card, askFrame, win, cards, questions):
     ask(win,cards,questions)
 
 def study(win, cardfile, questionfile, initThings, configfile):
+    win.unbind('<Return>')
     if not os.path.exists(configfile):
         with open(configfile, 'w') as conf_file:
             conf_file.write(cardfile+'|'+ questionfile)

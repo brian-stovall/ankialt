@@ -1,15 +1,18 @@
+import json
 
 def getCharFromUnicode(uc):
     return chr(int(uc, base=16))
 
-def cellSelector(startChar, cells, multiple = False, tr = (1,None)):
+def cellSelector(line, startChar, cells, multiple = False, tr = (1,None)):
     target = [cell[tr[0]:tr[1]] for cell in cells if cell.startswith(startChar)]
     if multiple == False:
-        assert len(target) < 2, 'trouble startChar: ' + startChar
+        assert len(target) < 2, 'line ' + str(line) + \
+            '\ncells ' + str(cells) + \
+            '\ntrouble startChar: ' + startChar + '\ntarget: ' + str(target)
         if len(target) == 0:
             return ''
         return target[0]
-    return '/'.join(target)
+    return ', '.join(target)
 
 def getMeanings(line, startChar, endChar):
     meaningsStart = line.index(startChar) - 1
@@ -24,6 +27,28 @@ def getJMeanings(line):
 
 def getCMeanings(line):
     return getMeanings(line, '/', None)
+
+def makeKanjiPin():
+    sep = '\t'
+    lineNo = 0
+    kanjipin = {}
+    inheader = True
+    with open('kanjidic', 'r') as infile:
+        for line in infile:
+            lineNo = lineNo + 1
+            if inheader:
+                inheader = False
+                continue
+            cells = line.split(' ')
+            kanji = getCharFromUnicode(cellSelector(lineNo, 'U', cells))
+            #print(line, kanji)
+            pinyin = cellSelector(lineNo, 'Y', cells, multiple = True)
+            assert kanji not in kanjipin.keys(), 'duplicate kanji: ' + kanji
+            kanjipin[kanji] = pinyin
+    print(lineNo, ' kanji processed')
+    with open('kanjipin', 'w') as outfile:
+        outfile.write(json.dumps(kanjipin, indent=4))
+
 
 def makeJoyou():
     sep = '\t'
@@ -128,3 +153,41 @@ def enrichJoyou():
                 continue
             #print(entries[i])
             outfile.write(str(entries[i]))
+
+def fixCore6k():
+    sep = '\t'
+    kanjipin = None
+    output = [['word', 'pinyin', 'definition', 'pos', 'sentence', 'translation']]
+    lineNo = 0
+    with open('kanjipin', 'r') as kanji_in:
+        kanjipin = json.loads(kanji_in.read())
+    with open('common6k.tsv', 'r') as infile:
+        isHeader = True
+        headerIndex = None
+        for line in infile:
+            line = line.split(sep)
+            lineNo = lineNo + 1
+            if isHeader:
+                headerIndex = line
+                isHeader = False
+                continue
+            word = line[headerIndex.index('Vocab-expression')]
+            definition = line[headerIndex.index('Vocab-meaning')]
+            pos = line[headerIndex.index('Vocab-pos')]
+            sentence = line[headerIndex.index('Sentence-expression')]
+            sentence = sentence.replace('<', '').replace('>', '') \
+                .replace('b', '').replace('/', '')
+            translation = line[headerIndex.index('Sentence-meaning')]
+            pinyin = []
+            for character in word:
+                if character in kanjipin.keys():
+                    pinyin.append(kanjipin[character])
+            pinyin = ', '.join(pinyin)
+            output.append([word, pinyin, definition, pos, sentence, translation])
+    print(len(output), ' entries churned')
+    with open('enriched6k.tsv', 'w') as outfile:
+        for line in output:
+            outfile.write(sep.join(line) + '\n')
+
+#makeKanjiPin()
+#fixCore6k()

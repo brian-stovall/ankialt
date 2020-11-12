@@ -8,8 +8,8 @@
         "jMeanings": "day/sun/Japan/counter for days",
         "cmeanings": "abbr. for \u65e5\u672c[Ri4 ben3], Japan",
         "rank": 1,
-        "mastery": 16,
-        "wait": 5
+        "mastery": 20,
+        "wait": 1
     },
     {
         "jFreq": "2",
@@ -20,8 +20,8 @@
         "jMeanings": "one/one radical (no.1)",
         "cmeanings": "all/also pr. [yao1] for greater clarity when spelling out numbers digit by digit/one/throughout/as soon as/single/\"one\" radical in Chinese characters (Kangxi radical 1)/a (article)/whole/1/entire",
         "rank": 2,
-        "mastery": 16,
-        "wait": 7
+        "mastery": 20,
+        "wait": 3
     },
     {
         "jFreq": "3",
@@ -32,8 +32,8 @@
         "jMeanings": "country",
         "cmeanings": "surname Guo",
         "rank": 3,
-        "mastery": 10,
-        "wait": 2
+        "mastery": 16,
+        "wait": 10
     },
     {
         "jFreq": "4",
@@ -44,8 +44,8 @@
         "jMeanings": "meeting/meet/party/association/interview/join",
         "cmeanings": "a moment (Taiwan pr. for this sense is [hui3])/association/to see/to meet/CL:\u500b|\u4e2a[ge4]/to gather/union/group/will/to be possible/can/to assemble/to be likely to/to be sure to/to be able to",
         "rank": 4,
-        "mastery": 9,
-        "wait": 2
+        "mastery": 15,
+        "wait": 10
     },
     {
         "jFreq": "5",
@@ -56,8 +56,8 @@
         "jMeanings": "person",
         "cmeanings": "people/person/man/CL:\u500b|\u4e2a[ge4],\u4f4d[wei4]",
         "rank": 5,
-        "mastery": 15,
-        "wait": 9
+        "mastery": 19,
+        "wait": 3
     },
     {
         "jFreq": "6",
@@ -68,8 +68,8 @@
         "jMeanings": "year/counter for years",
         "cmeanings": "surname Nian",
         "rank": 6,
-        "mastery": 10,
-        "wait": 0
+        "mastery": 16,
+        "wait": 8
     },
     {
         "jFreq": "7",
@@ -80,8 +80,8 @@
         "jMeanings": "large/big",
         "cmeanings": "great/very much/father's elder or younger brother/big/eldest/older (than)/major/huge/deep/large/oldest/greatly/(dialect) father/wide",
         "rank": 7,
-        "mastery": 9,
-        "wait": 4
+        "mastery": 15,
+        "wait": 11
     },
     {
         "jFreq": "8",
@@ -92,8 +92,8 @@
         "jMeanings": "ten",
         "cmeanings": "10/ten",
         "rank": 8,
-        "mastery": 9,
-        "wait": 5
+        "mastery": 15,
+        "wait": 13
     },
     {
         "jFreq": "9",
@@ -104,8 +104,8 @@
         "jMeanings": "two/two radical (no.2)",
         "cmeanings": "(Beijing dialect) stupid/two/2",
         "rank": 9,
-        "mastery": 6,
-        "wait": 3
+        "mastery": 12,
+        "wait": 5
     },
     {
         "jFreq": "10",
@@ -116,8 +116,8 @@
         "jMeanings": "book/present/main/origin/true/real/counter for long cylindrical things",
         "cmeanings": "inherent/original/source/origin/root/the current/originally/classifier for books, periodicals, files etc/stem/this",
         "rank": 10,
-        "mastery": 5,
-        "wait": 3
+        "mastery": 11,
+        "wait": 8
     },
     {
         "jFreq": "11",
@@ -128,8 +128,8 @@
         "jMeanings": "in/inside/middle/mean/center",
         "cmeanings": "surname Zhong/China/Chinese",
         "rank": 11,
-        "mastery": 4,
-        "wait": 3
+        "mastery": 10,
+        "wait": 9
     },
     {
         "jFreq": "12",
@@ -140,8 +140,8 @@
         "jMeanings": "long/leader/superior/senior",
         "cmeanings": "length/forever/long/constantly/always",
         "rank": 12,
-        "mastery": 1,
-        "wait": 1
+        "mastery": 7,
+        "wait": 7
     },
     {
         "jFreq": "13",
@@ -152,8 +152,8 @@
         "jMeanings": "exit/leave/go out/come out/put out/protrude",
         "cmeanings": "to put forth/to produce/to go beyond/to come out/to happen/classifier for dramas, plays, operas etc/to rise/to occur/to go out/(used after a verb to indicate an outward direction or a positive result)",
         "rank": 13,
-        "mastery": 0,
-        "wait": 2
+        "mastery": 6,
+        "wait": 7
     },
     {
         "jFreq": "14",
@@ -164,7 +164,7 @@
         "jMeanings": "three",
         "cmeanings": "surname San",
         "rank": 14,
-        "mastery": 0,
+        "mastery": 4,
         "wait": 0
     },
     {
@@ -176,7 +176,7 @@
         "jMeanings": "same/agree/equal",
         "cmeanings": "similar/like/same/alike/together/with",
         "rank": 15,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
@@ -188,7 +188,7 @@
         "jMeanings": "time/hour",
         "cmeanings": "surname Shi",
         "rank": 16,
-        "mastery": 0,
+        "mastery": 2,
         "wait": 0
     },
     {

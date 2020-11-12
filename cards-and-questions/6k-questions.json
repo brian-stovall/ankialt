@@ -1,0 +1,9 @@
+[
+    {
+            "name": "brian's word madness",
+            "question":
+                ["word", "pos", "sentence"],
+            "answer":
+                ["pinyin", "definition", "translation"]
+    }
+]
