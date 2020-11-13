@@ -49,7 +49,6 @@ def makeKanjiPin():
     with open('kanjipin', 'w') as outfile:
         outfile.write(json.dumps(kanjipin, indent=4))
 
-
 def makeJoyou():
     sep = '\t'
     maxFreq = 2495
@@ -189,5 +188,84 @@ def fixCore6k():
         for line in output:
             outfile.write(sep.join(line) + '\n')
 
+def makeUnihan():
+    sep = '\t'
+    unidir = '/home/artiste/unihan/'
+    unidict = {}
+    with open(unidir+'Unihan_Readings.txt', 'r') as readings:
+        entryTypes = {
+            'kDefinition': 'definition',
+            'kJapaneseOn': 'onyomi',
+            'kMandarin':'pinyin'
+        }
+        for line in readings:
+            if line.startswith('#') or len(line)==1:
+                continue
+            line=line.replace('\n','')
+            char, entrytype, data = line.split('\t')
+            char = getCharFromUnicode(char.replace('U+', ''))
+            if char not in unidict.keys():
+                unidict[char] = {}
+            entry = unidict[char]
+            if entrytype in entryTypes.keys():
+                if entrytype == 'kMandarin':
+                    data = convertpinyin(data)
+                key = entryTypes[entrytype]
+                if key not in entry.keys():
+                    entry[key] = [data]
+                else:
+                    entry[key].append(data)
+    with open(unidir+'Unihan_Variants.txt', 'r') as variants:
+        entryTypes = {
+            'kSimplifiedVariant': 'variant-simplified',
+            'kTraditionalVariant': 'variant-traditional'
+        }
+        for line in variants:
+            if line.startswith('#') or len(line)==1:
+                continue
+            line=line.replace('\n','')
+            char, entrytype, rawdata = line.split('\t')
+            char = getCharFromUnicode(char.replace('U+', ''))
+            dataPoints = rawdata.split(' ')
+            for data in dataPoints:
+                if '<' in data:
+                    data = data[0:data.index('<')]
+                if 'U+' in data:
+                    data = getCharFromUnicode(data.replace('U+', ''))
+                if char not in unidict.keys():
+                    unidict[char] = {}
+                entry = unidict[char]
+                if entrytype in entryTypes.keys():
+                    key = entryTypes[entrytype]
+                    if key not in entry.keys():
+                        entry[key] = [data]
+                    else:
+                        entry[key].append(data)
+    unihancleanup(unidict)
+    with open('unihan.json', 'w') as outfile:
+        outfile.write(json.dumps(unidict, indent=4, ensure_ascii=False))
+
+def unihancleanup(unidict):
+    pass
+
+def convertpinyin(data):
+    lookup = {
+        'āēīōūǖ':'1',
+        'áéíóúǘ':'2',
+        'ǎěǐǒǔǚ':'3',
+        'àèìòùǜ':'4'
+    }
+    number = ''
+    for char in data:
+        for key in lookup.keys():
+            if char in key:
+                number = lookup[key]
+                break
+    data = data + number
+    return data
+
+
+
+makeUnihan()
 #makeKanjiPin()
 #fixCore6k()
