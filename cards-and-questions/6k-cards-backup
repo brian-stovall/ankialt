@@ -8,7 +8,7 @@
         "translation": "That's a really nice story.",
         "rank": 1,
         "mastery": 9,
-        "wait": 7
+        "wait": 2
     },
     {
         "word": "\u898b\u308b",
@@ -19,7 +19,7 @@
         "translation": "I like looking at pictures.",
         "rank": 2,
         "mastery": 9,
-        "wait": 8
+        "wait": 3
     },
     {
         "word": "\u5186",
@@ -30,7 +30,7 @@
         "translation": "Draw a big circle there.",
         "rank": 3,
         "mastery": 9,
-        "wait": 9
+        "wait": 4
     },
     {
         "word": "\u591a\u3044",
@@ -41,7 +41,7 @@
         "translation": "There are a lot of temples in Kyoto.",
         "rank": 4,
         "mastery": 7,
-        "wait": 8
+        "wait": 3
     },
     {
         "word": "\u5bb6",
@@ -51,8 +51,8 @@
         "sentence": "\u5bb6\u306b\u904a\u3073\u306b\u6765\u3066\u304f\u3060\u3055\u3044\u3002",
         "translation": "Please come over to my house.",
         "rank": 5,
-        "mastery": 6,
-        "wait": 0
+        "mastery": 7,
+        "wait": 4
     },
     {
         "word": "\u3053\u308c",
@@ -62,8 +62,8 @@
         "sentence": "\u3053\u308c\u3092\u304f\u3060\u3055\u3044\u3002",
         "translation": "I'll have this please.",
         "rank": 6,
-        "mastery": 5,
-        "wait": 0
+        "mastery": 6,
+        "wait": 4
     },
     {
         "word": "\u65b0\u3057\u3044",
@@ -73,8 +73,8 @@
         "sentence": "\u5f7c\u306e\u8eca\u306f\u65b0\u3057\u3044\u3002",
         "translation": "His car is new.",
         "rank": 7,
-        "mastery": 3,
-        "wait": 0
+        "mastery": 4,
+        "wait": 3
     },
     {
         "word": "\u79c1",
@@ -84,8 +84,8 @@
         "sentence": "\u79c1\u304c\u884c\u304d\u307e\u3057\u3087\u3046\u3002",
         "translation": "Why don't I go.",
         "rank": 8,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 2,
+        "wait": 2
     },
     {
         "word": "\u4ed5\u4e8b",
@@ -95,8 +95,8 @@
         "sentence": "3\u6708\u306f\u4ed5\u4e8b\u304c\u5fd9\u3057\u3044\u3002",
         "translation": "I have a lot of work in March.",
         "rank": 9,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 2,
+        "wait": 3
     },
     {
         "word": "\u59cb\u3081\u308b",

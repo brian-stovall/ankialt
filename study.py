@@ -79,12 +79,12 @@ def init(win, configfile='quiz-config'):
     iLabel = tk.Label(iFrame,
         text='Choose a card and question file to begin.')
     ccFrame = tk.Frame(iFrame)
-    ccEntry = tk.Entry(ccFrame)
+    ccEntry = tk.Entry(ccFrame, width=40)
     ccEntry.insert(0, lastcards)
     ccButton = tk.Button(ccFrame, text='Select cards',
         command=lambda:chooseFile(ccEntry))
     cqFrame = tk.Frame(iFrame)
-    cqEntry = tk.Entry(cqFrame)
+    cqEntry = tk.Entry(cqFrame, width=40)
     cqEntry.insert(0, lastquest)
     cqButton = tk.Button(cqFrame, text='Select questions',
         command=lambda:chooseFile(cqEntry))
@@ -104,10 +104,12 @@ def makeline(parentframe, field, card):
     #thelabel = tk.Label(lineframe, text=field, font=font)
     dataText=field + ': ' + str(card[field])
     maxlen = 40
+    '''
     if len(dataText) > maxlen:
         dataText = '\n'.join([dataText[i:i+maxlen] \
             for i in range(0, len(dataText), maxlen)])
-    thedata = tk.Entry(lineframe, state='readonly', fg='black', font=font)
+    '''
+    thedata = tk.Entry(lineframe, state='readonly', fg='black', font=font, width=40)
     var = tk.StringVar()
     var.set(dataText)
     thedata.config(textvariable=var, relief='flat')
