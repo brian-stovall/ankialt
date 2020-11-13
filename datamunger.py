@@ -33,7 +33,7 @@ def makeKanjiPin():
     lineNo = 0
     kanjipin = {}
     inheader = True
-    with open('kanjidic', 'r') as infile:
+    with open('/home/artiste/quizlet/dicts/kanjidic', 'r') as infile:
         for line in infile:
             lineNo = lineNo + 1
             if inheader:
@@ -47,7 +47,7 @@ def makeKanjiPin():
             kanjipin[kanji] = pinyin
     print(lineNo, ' kanji processed')
     with open('kanjipin', 'w') as outfile:
-        outfile.write(json.dumps(kanjipin, indent=4))
+        outfile.write(json.dumps(kanjipin, indent=4, ensure_ascii=False))
 
 def makeJoyou():
     sep = '\t'
@@ -264,8 +264,41 @@ def convertpinyin(data):
     data = data + number
     return data
 
+def decodeJIS(text):
+    return text.decode('iso2022_jp')
 
+def makeEdict():
+    edict = {}
+    with open('/home/artiste/edict2', 'rb') as infile:
+        lineNo = 0
+        for line in infile:
+            line = str(line.decode('euc_jp'))
+            line = line.replace('\n','')
+            lineNo = lineNo + 1
+            if lineNo == 1:
+                continue
+            kanastart = line.index(' ')
+            kanaend = kanastart
+            if '[' in line:
+                kanastart = line.index('[')
+                kanaend = line.index(']')
+            words = line[0:kanastart].strip().split(';')
+            kana = line[kanastart+1: kanaend]
+            gloss = line[kanaend + 1:]
+            meanings = [meaning for meaning in gloss.strip().split('/') \
+                if meaning.startswith('EntL') != True and meaning != '']
+            for word in words:
+                if word not in edict.keys():
+                    edict[word] = set()
+                entry = edict[word]
+                entry = entry.union(set(meanings))
+                edict[word] = entry
+        for k in edict.keys():
+            edict[k] = list(edict[k])
+        with open('edict.json', 'w') as outfile:
+            outfile.write(json.dumps(edict, indent=4, ensure_ascii=False))
 
-makeUnihan()
+makeEdict()
+#makeUnihan()
 #makeKanjiPin()
 #fixCore6k()

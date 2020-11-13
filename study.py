@@ -28,7 +28,7 @@ def quitStudy(cardFile, cards):
         with open(cardFile,'r') as source:
             backup.write(source.read())
     with open(cardFile,'w') as outfile:
-        outfile.write(json.dumps(cards, indent=4))
+        outfile.write(json.dumps(cards, indent=4, ensure_ascii=False))
     messagebox.showinfo('Bye now!', 'wrote backup to' + str(backup.name) + ' and saved your work... bye!')
     sys.exit(0)
 
