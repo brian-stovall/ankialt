@@ -39,7 +39,7 @@ def getCard(cardData):
     for i in range(0,len(cardData)):
         if cardData[i]['wait'] == 0:
             return cardData[i]
-    print('hmm, did not find any cards with wait 0 - ask brian to fix')
+    messagebox.showinfo('hmm, did not find any cards with wait 0 - ask brian to fix')
 
 def loadjson(jsonfile):
     data = None
@@ -137,13 +137,15 @@ def ask(win, cards, questions):
     correctBtn.pack(pady=3)
     wrongBtn.pack(pady=3)
     win.bind('<Return>', lambda i: showAnswer(answerFrame, correctBtn))
-    win.bind('1', lambda i: correctBtn.invoke())
-    win.bind('4', lambda i: wrongBtn.invoke())
-    '''
-    win.bind('<space>', lambda i: answerFrame.pack())
-    win.bind('<KP_End>', lambda i: correctBtn.invoke())
-    win.bind('<KP_Down>', lambda i: wrongBtn.invoke())
-    '''
+    win.bind('<Key>', lambda event : judge(event, correctBtn, wrongBtn))
+    #win.bind('1', lambda i: correctBtn.invoke())
+    #win.bind('4', lambda i: wrongBtn.invoke())
+
+def judge(event, correctBtn, wrongBtn):
+    if event.char == '1':
+        correctBtn.invoke()
+    if event.char == '4':
+        wrongBtn.invoke()
 
 def showAnswer(aFrame, correctBtn):
     aFrame.pack()
@@ -160,9 +162,8 @@ def askAgain(correct, card, askFrame, win, cards, questions):
 
 def study(win, cardfile, questionfile, initThings, configfile):
     win.unbind('<Return>')
-    if not os.path.exists(configfile):
-        with open(configfile, 'w') as conf_file:
-            conf_file.write(cardfile+'|'+ questionfile)
+    with open(configfile, 'w') as conf_file:
+        conf_file.write(cardfile+'|'+ questionfile)
     cards = loadjson(cardfile)
     questions = loadjson(questionfile)
     hider(initThings)
