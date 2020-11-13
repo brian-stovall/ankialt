@@ -107,7 +107,10 @@ def makeline(parentframe, field, card):
     if len(dataText) > maxlen:
         dataText = '\n'.join([dataText[i:i+maxlen] \
             for i in range(0, len(dataText), maxlen)])
-    thedata = tk.Label(lineframe, text=dataText, font=font)
+    thedata = tk.Entry(lineframe, state='readonly', fg='black', font=font)
+    var = tk.StringVar()
+    var.set(dataText)
+    thedata.config(textvariable=var, relief='flat')
     #thelabel.pack(side='left')
     thedata.pack(side='right')
     lineframe.pack(pady=3)
