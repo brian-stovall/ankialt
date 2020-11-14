@@ -4,9 +4,10 @@ from tkinter import ttk
 from tkinter import messagebox
 import json, random, sys, os
 
-def timePasses(cards):
+def timePasses(cards, masteryThreshold=50):
     for card in cards:
-        card['wait'] = max(0, card['wait'] - 1)
+        if card['mastery'] <= masteryThreshold:
+            card['wait'] = max(0, card['wait'] - 1)
 
 def masterCard(card):
     card['mastery'] = card['mastery'] + 1
