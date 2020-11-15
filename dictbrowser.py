@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
 import json
+from tkinter import font
 
-def init(win):
+def j_init(win):
     win.minsize(500,300)
     unihan = None
     edict = None
@@ -37,8 +38,10 @@ def lookup(entry, unihan, edict, edict_result, dframe):
     #print(edict_result, uni_result)
     display_result(value, edict_result, uni_result, dframe)
 
-def make_meaning_line(meaning, frame):
-    line = tk.Entry(frame, state='readonly', fg='black', width=40)
+def make_meaning_line(meaning, frame, width=40):
+    thefont = tk.font.Font(family='Helvetica', size=20)
+    line = tk.Entry(frame, state='readonly', fg='black', width=width)
+    line['font'] = thefont
     var = tk.StringVar()
     var.set(meaning)
     line.config(textvariable=var, relief='flat')
@@ -104,12 +107,67 @@ def display_result(value, edict_result, uni_result, dframe):
     unihanFrame.pack()
     dframe.pack()
 
+def c_init(win):
+    win.minsize(500,300)
+    cedict = None
+    with open('./dicts/cedict-json') as infile:
+        cedict=json.loads(infile.read())
+    eFrame = tk.Frame(win)
+    dframe = tk.Frame(win)
+    entry = tk.Entry(eFrame)
+    sep = ttk.Separator(win)
+    win.bind('<Return>', lambda i: c_lookup(entry, cedict, dframe))
+    entry.pack()
+    eFrame.pack()
+    sep.pack(fill='x')
+    entry.focus_set()
+
+def c_lookup(entry, cedict, dframe):
+    value = entry.get()
+    entry.delete(0, 'end')
+    cedict_result = None
+    for widget in dframe.winfo_children():
+        widget.destroy()
+    if value in cedict.keys():
+         cedict_result = cedict[value]
+    else:
+        cedict_result={}
+    if cedict_result != {}:
+        c_display_result(value, cedict_result, dframe)
+
+def c_display_result(value, cedict_result, dframe):
+    maxmeanings = 50 #not planning to throttle
+    cedictFrame = tk.Frame(dframe)
+    meaningsFrame = tk.Frame(dframe)
+    valueline = make_meaning_line(value, cedictFrame, len(value) * 2)
+    tradline = None
+    if 'traditional' in cedict_result.keys():
+        tradline = make_meaning_line(cedict_result['traditional'], cedictFrame, len(value) * 2)
+    readingline = make_meaning_line(cedict_result['reading'], cedictFrame, len(cedict_result['reading']))
+    meanings = cedict_result['definition']
+    meaninglines = [make_meaning_line(meaning, meaningsFrame) for meaning in meanings]
+    if len(meaninglines) == 0:
+        meaninglines = [make_meaning_line('not in dictionary!', cedictFrame)]
+    if len(meaninglines) > maxmeanings:
+        meaninglines = meaninglines[0:maxmeanings]
+    valueline.pack(side = tk.LEFT)
+    if tradline != None:
+        tradline.pack(side = tk.RIGHT)
+    readingline.pack(side = tk.RIGHT)
+    for line in meaninglines:
+        line.pack()
+    cedictFrame.pack()
+    meaningsFrame.pack()
+    dframe.pack()
 
 
-def main():
+def main(lang='c'):
     win = tk.Tk()
     win.title('dictionary!')
-    init(win)
+    if lang == 'j':
+        j_init(win)
+    if lang == 'c':
+        c_init(win)
     win.mainloop()
 
 main()

@@ -298,7 +298,27 @@ def makeEdict():
         with open('edict.json', 'w') as outfile:
             outfile.write(json.dumps(edict, indent=4, ensure_ascii=False))
 
-makeEdict()
+def makeCedict():
+    cedict = {}
+    with open('./dicts/cedict', 'r') as infile:
+        lineNo = 0
+        for line in infile:
+            if line.startswith('#'):
+                continue
+            lineNo = lineNo + 1
+            tradform, simpform = line.split(' ')[0:2]
+            cedict[simpform] = {}
+            cedict[simpform]['reading'] = line[line.index('[') + 1 : line.index(']')]
+            meanings = line.strip()[line.index('/') : ].split('/')
+            cedict[simpform]['definition'] = [meaning for meaning in meanings if meaning != '']
+            if simpform != tradform:
+                cedict[simpform]['traditional'] = tradform
+            #print(lineNo, simpchar, tradchar, reading, meanings)
+    with open('./dicts/cedict-json', 'w') as outfile:
+        outfile.write(json.dumps(cedict, indent=4, ensure_ascii=False))
+
+makeCedict()
+#makeEdict()
 #makeUnihan()
 #makeKanjiPin()
 #fixCore6k()
