@@ -48,6 +48,7 @@ def make_unihan_lines(char, uni, frame):
     pinyin = None
     definition = None
     onyomi = None
+    variations = []
     lines = []
     if 'pinyin' in uni.keys():
         pinyin = uni['pinyin']
@@ -55,8 +56,16 @@ def make_unihan_lines(char, uni, frame):
         definition = '; '.join(uni['definition'])
     if pinyin == None and 'onyomi' in uni.keys():
         onyomi = uni['onyomi']
-    for thing in [char, pinyin, onyomi, definition]:
-        if thing is not None:
+    if 'variant-traditional' in uni.keys():
+        variations.extend(uni['variant-traditional'])
+    if 'variant-simplified' in uni.keys():
+        variations.extend(uni['variant-simplified'])
+    if len(variations) > 0:
+        variations = 'Variations: ' + ' '.join(variations)
+    else:
+        variations = None
+    for thing in [char, pinyin, onyomi, definition, variations]:
+        if thing is not None and thing is not []:
             line = tk.Entry(frame, state='readonly', fg='black', width=40)
             var = tk.StringVar()
             var.set(thing)
