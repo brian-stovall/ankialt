@@ -170,4 +170,5 @@ def main(lang='c'):
         c_init(win)
     win.mainloop()
 
-main()
+#main(lang='c')
+main(lang='j')

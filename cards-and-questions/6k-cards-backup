@@ -7,8 +7,8 @@
         "sentence": "それはとってもいい話だ。",
         "translation": "That's a really nice story.",
         "rank": 1,
-        "mastery": 11,
-        "wait": 8
+        "mastery": 14,
+        "wait": 6
     },
     {
         "word": "見る",
@@ -18,8 +18,8 @@
         "sentence": "私は絵を見るのが好きです。",
         "translation": "I like looking at pictures.",
         "rank": 2,
-        "mastery": 11,
-        "wait": 9
+        "mastery": 14,
+        "wait": 7
     },
     {
         "word": "円",
@@ -29,8 +29,8 @@
         "sentence": "そこに大きな円を描いて。",
         "translation": "Draw a big circle there.",
         "rank": 3,
-        "mastery": 11,
-        "wait": 10
+        "mastery": 14,
+        "wait": 8
     },
     {
         "word": "多い",
@@ -40,8 +40,8 @@
         "sentence": "京都にはお寺が多い。",
         "translation": "There are a lot of temples in Kyoto.",
         "rank": 4,
-        "mastery": 9,
-        "wait": 9
+        "mastery": 12,
+        "wait": 7
     },
     {
         "word": "家",
@@ -51,8 +51,8 @@
         "sentence": "家に遊びに来てください。",
         "translation": "Please come over to my house.",
         "rank": 5,
-        "mastery": 9,
-        "wait": 10
+        "mastery": 12,
+        "wait": 8
     },
     {
         "word": "これ",
@@ -62,8 +62,8 @@
         "sentence": "これをください。",
         "translation": "I'll have this please.",
         "rank": 6,
-        "mastery": 7,
-        "wait": 0
+        "mastery": 11,
+        "wait": 8
     },
     {
         "word": "新しい",
@@ -73,8 +73,8 @@
         "sentence": "彼の車は新しい。",
         "translation": "His car is new.",
         "rank": 7,
-        "mastery": 5,
-        "wait": 0
+        "mastery": 9,
+        "wait": 7
     },
     {
         "word": "私",
@@ -84,8 +84,8 @@
         "sentence": "私が行きましょう。",
         "translation": "Why don't I go.",
         "rank": 8,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 7,
+        "wait": 6
     },
     {
         "word": "仕事",
@@ -95,8 +95,8 @@
         "sentence": "3月は仕事が忙しい。",
         "translation": "I have a lot of work in March.",
         "rank": 9,
-        "mastery": 3,
-        "wait": 0
+        "mastery": 7,
+        "wait": 7
     },
     {
         "word": "始める",
@@ -106,8 +106,8 @@
         "sentence": "テストを始めてください。",
         "translation": "Please start the test.",
         "rank": 10,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 5,
+        "wait": 6
     },
     {
         "word": "なる",
@@ -117,7 +117,7 @@
         "sentence": "彼は医者になりました。",
         "translation": "He became a doctor.",
         "rank": 11,
-        "mastery": 2,
+        "mastery": 5,
         "wait": 0
     },
     {
@@ -128,7 +128,7 @@
         "sentence": "友達と一緒に宿題をした。",
         "translation": "I did my homework with a friend.",
         "rank": 12,
-        "mastery": 0,
+        "mastery": 3,
         "wait": 0
     },
     {
@@ -139,7 +139,7 @@
         "sentence": "今朝は早く家を出ました。",
         "translation": "I left the house early this morning.",
         "rank": 13,
-        "mastery": 0,
+        "mastery": 2,
         "wait": 0
     },
     {
