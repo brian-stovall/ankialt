@@ -209,6 +209,9 @@ def makeUnihan():
             entry = unidict[char]
             if entrytype in entryTypes.keys():
                 if entrytype == 'kMandarin':
+                    if ' ' in data:
+                        print('two entries!', data, 'choosing ', data.split(' ')[0])
+                        data = data.split(' ')[0]
                     data = convertpinyin(data)
                 key = entryTypes[entrytype]
                 if key not in entry.keys():
@@ -242,7 +245,7 @@ def makeUnihan():
                     else:
                         entry[key].append(data)
     unihancleanup(unidict)
-    with open('unihan.json', 'w') as outfile:
+    with open('./dicts/unihan.json', 'w') as outfile:
         outfile.write(json.dumps(unidict, indent=4, ensure_ascii=False))
 
 def unihancleanup(unidict):
@@ -326,13 +329,105 @@ def makeCedict():
             meanings = line.strip()[line.index('/') : ].split('/')
             cedict[simpform]['definition'] = [meaning for meaning in meanings if meaning != '']
             if simpform != tradform:
-                cedict[simpform]['traditional'] = tradform
+                cedict[simpform]['traditional'] = tradformmakeKanjiPin
             #print(lineNo, simpchar, tradchar, reading, meanings)
     with open('./dicts/cedict-json', 'w') as outfile:
         outfile.write(json.dumps(cedict, indent=4, ensure_ascii=False))
 
+def getneededchars():
+    '''
+    with open('./shinjitai-untypeable', 'r') as infile:
+        lineNo = 0
+        for line in infile:
+            if line.startswith('#') or len(line) < 10:
+                continue
+            lineNo = lineNo + 1
+            line = line.strip()
+            if lineNo == 1:
+                neededchars.extend(line.split(' '))
+                print(lineNo, len(neededchars))
+            if lineNo == 2:
+                neededchars.extend(thing[2] for thing in line.split(', '))
+                print(lineNo, len(neededchars))
+            if lineNo == 3 or lineNo == 4:
+                [neededchars.extend([thing[0], thing[2]]) for thing in line.split(', ')]
+                print(lineNo, len(neededchars))
+            if lineNo == 5:
+                [neededchars.extend([thing[2], thing[4]]) for thing in line.split(', ')]
+                print(lineNo, len(neededchars))
+    '''
+    neededchars = set()
+    cedict = None
+    with open('./dicts/cedict-json') as infile:
+        cedict = json.loads(infile.read())
+    for entry in cedict.keys():
+        neededchars.update(list(entry))
+    #print(len(neededchars))
+    kanjipin = None
+    with open('./dicts/kanjipin') as infile:
+        kanjipin = json.loads(infile.read())
+    for entry in kanjipin.keys():
+        neededchars.update(list(entry))
+    #print(len(neededchars))
+    blacklist = [chr(i) for i in range(ord('a'), ord('z') + 1)]
+    blacklist.extend([chr(i) for i in range(ord('A'), ord('Z') + 1)])
+    blacklist.extend([str(i) for i in range(0, 10)])
+    blacklist = set(blacklist)
+    #print(len(blacklist))
+    neededchars = neededchars.difference(blacklist)
+    #print(len(neededchars))
+    unihan = None
+    rejects = []
+    nopinyin = []
+    with open('./dicts/unihan.json') as infile:
+        unihan = json.loads(infile.read())
+    for char in neededchars:
+        if char not in unihan.keys():
+            rejects.append(char)
+        elif 'pinyin' not in unihan[char].keys():
+            if 'onyomi' in unihan[char].keys():
+                print('!onyomi', char)
+            nopinyin.append(char)
+    neededchars = neededchars.difference(rejects)
+    neededchars = neededchars.difference(nopinyin)
+    #print(len(neededchars))
+    charpin = {}
+    multi = 0
+    for char in neededchars:
+        charpin[char] = unihan[char]['pinyin']
+        if len(charpin[char]) > 1:
+            multi = multi + 1
+    #print('multi', multi)
+    return charpin
+
+def makeibustable():
+    longest = 0
+    sep = '\t'
+    table = []
+    charpin = getneededchars()
+    pinchar = {}
+    for k, v in charpin.items():
+        for pin in v:
+            assert ' ' not in pin, print('bad pinyin: ', k, pin)
+            table.append(sep.join([pin, k, '1']) + '\n')
+            longest = max(longest, len(pin))
+            '''
+            if len(pin) == longest:
+                print('longest so far', pin)
+            '''
+    print('longest', longest)
+    with open('table','w') as outfile:
+        for line in table:
+            outfile.write(line)
+
+
+
+
+
+makeibustable()
+#getneededchars()
 #makeCedict()
 #makeEdict()
-makeUnihan()
+#makeUnihan()
 #makeKanjiPin()
 #fixCore6k()
