@@ -48,6 +48,7 @@ def make_meaning_line(meaning, frame, width=40):
     return line
 
 def make_unihan_lines(char, uni, frame):
+    thefont = tk.font.Font(family='Helvetica', size=20)
     pinyin = None
     definition = None
     onyomi = None
@@ -69,7 +70,7 @@ def make_unihan_lines(char, uni, frame):
         variations = None
     for thing in [char, pinyin, onyomi, definition, variations]:
         if thing is not None and thing is not []:
-            line = tk.Entry(frame, state='readonly', fg='black', width=40)
+            line = tk.Entry(frame, state='readonly', fg='black', width=40, font=thefont)
             var = tk.StringVar()
             var.set(thing)
             line.config(textvariable=var, relief='flat')
@@ -79,6 +80,7 @@ def make_unihan_lines(char, uni, frame):
     return lines
 
 def display_result(value, edict_result, uni_result, dframe):
+    thefont = tk.font.Font(family='Helvetica', size=20)
     maxmeanings = 3
     edictFrame = tk.Frame(dframe)
     valueline = make_meaning_line(value, edictFrame)
@@ -103,7 +105,7 @@ def display_result(value, edict_result, uni_result, dframe):
         if isinstance(line, ttk.Separator):
             fill = 'x'
         line.pack(fill=fill)
-    edictFrame.pack()
+    #edictFrame.pack()
     unihanFrame.pack()
     dframe.pack()
 

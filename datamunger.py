@@ -255,13 +255,27 @@ def convertpinyin(data):
         'ǎěǐǒǔǚ':'3',
         'àèìòùǜ':'4'
     }
+    char_convert = {
+        0:'a',
+        1:'e',
+        2:'i',
+        3:'o',
+        4:'u',
+        5:'v'
+    }
     number = ''
+    replacechar = None
+    replaceindex = None
     for char in data:
         for key in lookup.keys():
             if char in key:
                 number = lookup[key]
+                replacechar = char
+                replaceindex = key.index(char)
                 break
     data = data + number
+    if replacechar is not None:
+        data = data.replace(replacechar, char_convert[replaceindex])
     return data
 
 def decodeJIS(text):
@@ -317,8 +331,8 @@ def makeCedict():
     with open('./dicts/cedict-json', 'w') as outfile:
         outfile.write(json.dumps(cedict, indent=4, ensure_ascii=False))
 
-makeCedict()
+#makeCedict()
 #makeEdict()
-#makeUnihan()
+makeUnihan()
 #makeKanjiPin()
 #fixCore6k()
