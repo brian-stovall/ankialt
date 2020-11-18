@@ -138,8 +138,8 @@ def ask(win, cards, questions):
     answerFrame = tk.Frame(askFrame)
     for field in question['answer']:
         makeline(answerFrame, field, card)
-    correctBtn = tk.Button(answerFrame, text='1: correct', command=lambda: askAgain(True, card, askFrame, win, cards, questions))
-    wrongBtn = tk.Button(answerFrame, text='4: incorrect', command=lambda: askAgain(False, card, askFrame, win, cards, questions))
+    correctBtn = tk.Button(answerFrame, text='5: correct', command=lambda: askAgain(True, card, askFrame, win, cards, questions))
+    wrongBtn = tk.Button(answerFrame, text='9: incorrect', command=lambda: askAgain(False, card, askFrame, win, cards, questions))
     correctBtn.pack(pady=3)
     wrongBtn.pack(pady=3)
     win.bind('<Return>', lambda i: showAnswer(answerFrame, correctBtn))
@@ -148,9 +148,9 @@ def ask(win, cards, questions):
     #win.bind('4', lambda i: wrongBtn.invoke())
 
 def judge(event, correctBtn, wrongBtn):
-    if event.char == '1':
+    if event.char == '5':
         correctBtn.invoke()
-    if event.char == '4':
+    if event.char == '9':
         wrongBtn.invoke()
 
 def showAnswer(aFrame, correctBtn):
