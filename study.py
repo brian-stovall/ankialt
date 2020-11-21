@@ -4,7 +4,9 @@ from tkinter import ttk
 from tkinter import messagebox
 import json, random, sys, os
 
-def timePasses(cards, masteryThreshold=50):
+num_studied = 0
+
+def timePasses(cards, masteryThreshold=25):
     for card in cards:
         if card['mastery'] <= masteryThreshold:
             card['wait'] = max(0, card['wait'] - 1)
@@ -164,6 +166,9 @@ def askAgain(correct, card, askFrame, win, cards, questions):
     else:
         failCard(card)
     askFrame.destroy()
+    global num_studied
+    num_studied = num_studied + 1
+    win.title(str(num_studied))
     ask(win,cards,questions)
 
 def study(win, cardfile, questionfile, initThings, configfile):
