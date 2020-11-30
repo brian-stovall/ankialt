@@ -84,8 +84,8 @@
         "sentence": "私が行きましょう。",
         "translation": "Why don't I go.",
         "rank": 8,
-        "mastery": 24,
-        "wait": 21
+        "mastery": 26,
+        "wait": 27
     },
     {
         "word": "仕事",
@@ -95,8 +95,8 @@
         "sentence": "3月は仕事が忙しい。",
         "translation": "I have a lot of work in March.",
         "rank": 9,
-        "mastery": 25,
-        "wait": 14
+        "mastery": 26,
+        "wait": 27
     },
     {
         "word": "始める",
@@ -106,8 +106,8 @@
         "sentence": "テストを始めてください。",
         "translation": "Please start the test.",
         "rank": 10,
-        "mastery": 24,
-        "wait": 14
+        "mastery": 26,
+        "wait": 27
     },
     {
         "word": "なる",
@@ -117,8 +117,8 @@
         "sentence": "彼は医者になりました。",
         "translation": "He became a doctor.",
         "rank": 11,
-        "mastery": 24,
-        "wait": 15
+        "mastery": 26,
+        "wait": 27
     },
     {
         "word": "する",
@@ -128,8 +128,8 @@
         "sentence": "友達と一緒に宿題をした。",
         "translation": "I did my homework with a friend.",
         "rank": 12,
-        "mastery": 22,
-        "wait": 14
+        "mastery": 26,
+        "wait": 27
     },
     {
         "word": "出る",
@@ -139,8 +139,8 @@
         "sentence": "今朝は早く家を出ました。",
         "translation": "I left the house early this morning.",
         "rank": 13,
-        "mastery": 21,
-        "wait": 14
+        "mastery": 25,
+        "wait": 21
     },
     {
         "word": "使う",
@@ -150,8 +150,8 @@
         "sentence": "このパソコンを使ってください。",
         "translation": "Please use this computer.",
         "rank": 14,
-        "mastery": 20,
-        "wait": 14
+        "mastery": 24,
+        "wait": 21
     },
     {
         "word": "ところ",
@@ -161,8 +161,8 @@
         "sentence": "私は友達のところに泊まった。",
         "translation": "I stayed at my friend's place for the night.",
         "rank": 15,
-        "mastery": 20,
-        "wait": 15
+        "mastery": 24,
+        "wait": 22
     },
     {
         "word": "思う",
@@ -172,8 +172,8 @@
         "sentence": "私もそう思います。",
         "translation": "I think so too.",
         "rank": 16,
-        "mastery": 18,
-        "wait": 14
+        "mastery": 22,
+        "wait": 21
     },
     {
         "word": "持つ",
@@ -183,8 +183,8 @@
         "sentence": "私は車を持っています。",
         "translation": "I have a car.",
         "rank": 17,
-        "mastery": 17,
-        "wait": 15
+        "mastery": 21,
+        "wait": 21
     },
     {
         "word": "時間",
@@ -194,8 +194,8 @@
         "sentence": "今は時間がありません。",
         "translation": "I don't have time now.",
         "rank": 18,
-        "mastery": 15,
-        "wait": 14
+        "mastery": 19,
+        "wait": 13
     },
     {
         "word": "今年",
@@ -205,8 +205,8 @@
         "sentence": "今年はイタリアに旅行したい。",
         "translation": "I want to travel to Italy this year.",
         "rank": 19,
-        "mastery": 14,
-        "wait": 14
+        "mastery": 18,
+        "wait": 19
     },
     {
         "word": "知る",
@@ -216,8 +216,8 @@
         "sentence": "誰もその話を知らない。",
         "translation": "No one knows that story.",
         "rank": 20,
-        "mastery": 13,
-        "wait": 14
+        "mastery": 16,
+        "wait": 0
     },
     {
         "word": "作る",
@@ -227,7 +227,7 @@
         "sentence": "今、朝ご飯を作っています。",
         "translation": "I'm making breakfast now.",
         "rank": 21,
-        "mastery": 10,
+        "mastery": 15,
         "wait": 0
     },
     {
@@ -238,7 +238,7 @@
         "sentence": "彼の日本語のレベルは私と同じ位だ。",
         "translation": "His Japanese level is about the same as mine.",
         "rank": 22,
-        "mastery": 9,
+        "mastery": 14,
         "wait": 0
     },
     {
@@ -249,7 +249,7 @@
         "sentence": "彼は今、勉強しています。",
         "translation": "He's studying now.",
         "rank": 23,
-        "mastery": 8,
+        "mastery": 13,
         "wait": 0
     },
     {
@@ -260,8 +260,8 @@
         "sentence": "工事は3月まで続きます。",
         "translation": "Construction will continue until March.",
         "rank": 24,
-        "mastery": 7,
-        "wait": 0
+        "mastery": 12,
+        "wait": 4
     },
     {
         "word": "国",
@@ -271,8 +271,8 @@
         "sentence": "私の国について少しお話しましょう。",
         "translation": "Let me tell you a bit about my country.",
         "rank": 25,
-        "mastery": 6,
-        "wait": 0
+        "mastery": 11,
+        "wait": 4
     },
     {
         "word": "未だ",
@@ -282,7 +282,7 @@
         "sentence": "宿題は未だ終わっていません。",
         "translation": "I haven't finished my homework yet.",
         "rank": 26,
-        "mastery": 4,
+        "mastery": 9,
         "wait": 0
     },
     {
@@ -293,7 +293,7 @@
         "sentence": "一緒に宿題をやろう。",
         "translation": "Let's do our homework together.",
         "rank": 27,
-        "mastery": 4,
+        "mastery": 8,
         "wait": 0
     },
     {
@@ -304,7 +304,7 @@
         "sentence": "上司が「一杯、飲もう。」と言った。",
         "translation": "My boss said: \"Let's have a drink.\"",
         "rank": 28,
-        "mastery": 1,
+        "mastery": 7,
         "wait": 0
     },
     {
@@ -315,7 +315,7 @@
         "sentence": "今年は雨が少ないです。",
         "translation": "There's not much rain this year.",
         "rank": 29,
-        "mastery": 1,
+        "mastery": 6,
         "wait": 0
     },
     {
@@ -326,7 +326,7 @@
         "sentence": "日曜日は図書館に行きます。",
         "translation": "I go to the library on Sundays.",
         "rank": 30,
-        "mastery": 0,
+        "mastery": 4,
         "wait": 0
     },
     {
@@ -337,7 +337,7 @@
         "sentence": "帰国することに決めました。",
         "translation": "I've decided to go back to my country.",
         "rank": 31,
-        "mastery": 0,
+        "mastery": 3,
         "wait": 0
     },
     {
@@ -348,7 +348,7 @@
         "sentence": "これがこの町で一番高いビルです。",
         "translation": "This is the tallest building in town.",
         "rank": 32,
-        "mastery": 0,
+        "mastery": 3,
         "wait": 0
     },
     {
@@ -359,7 +359,7 @@
         "sentence": "よく考えてください。",
         "translation": "Please think carefully.",
         "rank": 33,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
