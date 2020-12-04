@@ -2,6 +2,8 @@ import tkinter as tk
 from tkinter import ttk
 import json
 from tkinter import font
+thefont = font = 'arial 15'
+#thefont = tk.font.Font(family='Arial', size=20)
 
 def j_init(win):
     win.minsize(500,300)
@@ -14,7 +16,7 @@ def j_init(win):
         edict=json.loads(infile.read())
     eFrame = tk.Frame(win)
     dframe = tk.Frame(win)
-    entry = tk.Entry(eFrame)
+    entry = tk.Entry(eFrame, font=thefont)
     sep = ttk.Separator(win)
     win.bind('<Return>', lambda i: lookup(entry, unihan, edict, edict_result, dframe))
     entry.pack()
@@ -39,7 +41,6 @@ def lookup(entry, unihan, edict, edict_result, dframe):
     display_result(value, edict_result, uni_result, dframe)
 
 def make_meaning_line(meaning, frame, width=40):
-    thefont = tk.font.Font(family='Helvetica', size=20)
     line = tk.Entry(frame, state='readonly', fg='black', width=width)
     line['font'] = thefont
     var = tk.StringVar()
@@ -48,7 +49,6 @@ def make_meaning_line(meaning, frame, width=40):
     return line
 
 def make_unihan_lines(char, uni, frame):
-    thefont = tk.font.Font(family='Helvetica', size=20)
     pinyin = None
     definition = None
     onyomi = None
@@ -80,7 +80,6 @@ def make_unihan_lines(char, uni, frame):
     return lines
 
 def display_result(value, edict_result, uni_result, dframe):
-    thefont = tk.font.Font(family='Helvetica', size=20)
     maxmeanings = 3
     edictFrame = tk.Frame(dframe)
     valueline = make_meaning_line(value, edictFrame)

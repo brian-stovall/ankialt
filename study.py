@@ -5,6 +5,7 @@ from tkinter import messagebox
 import json, random, sys, os
 
 num_studied = 0
+font = 'arial 15'
 
 def timePasses(cards, masteryThreshold=25):
     for card in cards:
@@ -103,7 +104,6 @@ def init(win, configfile='quiz-config'):
 
 def makeline(parentframe, field, card):
     lineframe = tk.Frame(parentframe)
-    font = 'arial 15 bold'
     #thelabel = tk.Label(lineframe, text=field, font=font)
     dataText=field + ': ' + str(card[field])
     maxlen = 40
@@ -123,7 +123,7 @@ def makeline(parentframe, field, card):
 def ask(win, cards, questions):
     askFrame = tk.Frame(win)
     typeframe = tk.Frame(askFrame)
-    typeEntry = tk.Entry(typeframe)
+    typeEntry = tk.Entry(typeframe, font=font)
     typeEntry.pack()
     typeframe.pack()
     typeEntry.focus_set()
