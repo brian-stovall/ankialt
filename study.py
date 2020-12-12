@@ -7,7 +7,7 @@ import json, random, sys, os
 num_studied = 0
 font = 'arial 15'
 
-def timePasses(cards, masteryThreshold=25):
+def timePasses(cards, masteryThreshold=20):
     for card in cards:
         if card['mastery'] <= masteryThreshold:
             card['wait'] = max(0, card['wait'] - 1)
