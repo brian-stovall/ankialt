@@ -348,8 +348,8 @@
         "sentence": "これがこの町で一番高いビルです。",
         "translation": "This is the tallest building in town.",
         "rank": 32,
-        "mastery": 20,
-        "wait": 20
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "考える",
@@ -359,8 +359,8 @@
         "sentence": "よく考えてください。",
         "translation": "Please think carefully.",
         "rank": 33,
-        "mastery": 19,
-        "wait": 20
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "感じる",
@@ -370,8 +370,8 @@
         "sentence": "膝に痛みを感じます。",
         "translation": "I feel a pain in my knee.",
         "rank": 34,
-        "mastery": 17,
-        "wait": 0
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "子供",
@@ -381,8 +381,8 @@
         "sentence": "電車で子供が騒いでいた。",
         "translation": "Kids were making a racket in the train.",
         "rank": 35,
-        "mastery": 16,
-        "wait": 0
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "そう",
@@ -392,8 +392,8 @@
         "sentence": "私もそう思います。",
         "translation": "That's what I think too.",
         "rank": 36,
-        "mastery": 15,
-        "wait": 0
+        "mastery": 20,
+        "wait": 18
     },
     {
         "word": "大学",
@@ -403,8 +403,8 @@
         "sentence": "大学に行ってもっと勉強したいです。",
         "translation": "I want to go to college and study more.",
         "rank": 37,
-        "mastery": 14,
-        "wait": 0
+        "mastery": 19,
+        "wait": 18
     },
     {
         "word": "もう",
@@ -414,8 +414,8 @@
         "sentence": "彼はもう帰りました。",
         "translation": "He's already gone home.",
         "rank": 38,
-        "mastery": 13,
-        "wait": 0
+        "mastery": 18,
+        "wait": 18
     },
     {
         "word": "近く",
@@ -425,8 +425,8 @@
         "sentence": "駅の近くで食事をした。",
         "translation": "I ate near the station.",
         "rank": 39,
-        "mastery": 12,
-        "wait": 5
+        "mastery": 17,
+        "wait": 18
     },
     {
         "word": "入れる",
@@ -436,8 +436,8 @@
         "sentence": "彼はかばんに手帳を入れた。",
         "translation": "He put the appointment book in his bag.",
         "rank": 40,
-        "mastery": 10,
-        "wait": 2
+        "mastery": 15,
+        "wait": 0
     },
     {
         "word": "学生",
@@ -447,7 +447,7 @@
         "sentence": "彼は真面目な学生です。",
         "translation": "He's a serious student.",
         "rank": 41,
-        "mastery": 9,
+        "mastery": 14,
         "wait": 0
     },
     {
@@ -458,7 +458,7 @@
         "sentence": "明日の午後、お客様が来る。",
         "translation": "A guest is coming to visit tomorrow afternoon.",
         "rank": 42,
-        "mastery": 7,
+        "mastery": 13,
         "wait": 0
     },
     {
@@ -469,7 +469,7 @@
         "sentence": "彼女の髪はとても長い。",
         "translation": "Her hair is very long.",
         "rank": 43,
-        "mastery": 5,
+        "mastery": 12,
         "wait": 0
     },
     {
@@ -480,8 +480,8 @@
         "sentence": "本を１冊買いました。",
         "translation": "I bought one book.",
         "rank": 44,
-        "mastery": 4,
-        "wait": 0
+        "mastery": 11,
+        "wait": 6
     },
     {
         "word": "よく",
@@ -491,8 +491,8 @@
         "sentence": "彼女はよく旅行に行きます。",
         "translation": "She often goes on holiday.",
         "rank": 45,
-        "mastery": 3,
-        "wait": 0
+        "mastery": 9,
+        "wait": 5
     },
     {
         "word": "彼女",
@@ -502,7 +502,7 @@
         "sentence": "彼女はOLです。",
         "translation": "She's an office worker.",
         "rank": 46,
-        "mastery": 2,
+        "mastery": 7,
         "wait": 0
     },
     {
@@ -513,7 +513,7 @@
         "sentence": "彼女はラジオを聞いています。",
         "translation": "She's listening to the radio.",
         "rank": 47,
-        "mastery": 0,
+        "mastery": 6,
         "wait": 0
     },
     {
@@ -524,7 +524,7 @@
         "sentence": "あなたはどう思いますか。",
         "translation": "What do you think?",
         "rank": 48,
-        "mastery": 1,
+        "mastery": 5,
         "wait": 0
     },
     {
@@ -535,7 +535,7 @@
         "sentence": "皆一生懸命生きている。",
         "translation": "They're all living their lives the best way that they can.",
         "rank": 49,
-        "mastery": 1,
+        "mastery": 5,
         "wait": 0
     },
     {
@@ -546,7 +546,7 @@
         "sentence": "この言葉の意味が分かりません。",
         "translation": "I don't understand the meaning of this word.",
         "rank": 50,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
@@ -568,7 +568,7 @@
         "sentence": "あの本をどこに置きましたか。",
         "translation": "Where did you put that book?",
         "rank": 52,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
@@ -579,7 +579,7 @@
         "sentence": "それを一つください。",
         "translation": "Please give me one of those.",
         "rank": 53,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
