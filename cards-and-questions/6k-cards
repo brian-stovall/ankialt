@@ -458,8 +458,8 @@
         "sentence": "明日の午後、お客様が来る。",
         "translation": "A guest is coming to visit tomorrow afternoon.",
         "rank": 42,
-        "mastery": 20,
-        "wait": 3
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "長い",
@@ -469,8 +469,8 @@
         "sentence": "彼女の髪はとても長い。",
         "translation": "Her hair is very long.",
         "rank": 43,
-        "mastery": 19,
-        "wait": 3
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "本",
@@ -480,8 +480,8 @@
         "sentence": "本を１冊買いました。",
         "translation": "I bought one book.",
         "rank": 44,
-        "mastery": 18,
-        "wait": 3
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "よく",
@@ -491,8 +491,8 @@
         "sentence": "彼女はよく旅行に行きます。",
         "translation": "She often goes on holiday.",
         "rank": 45,
-        "mastery": 17,
-        "wait": 3
+        "mastery": 20,
+        "wait": 10
     },
     {
         "word": "彼女",
@@ -502,8 +502,8 @@
         "sentence": "彼女はOLです。",
         "translation": "She's an office worker.",
         "rank": 46,
-        "mastery": 16,
-        "wait": 3
+        "mastery": 19,
+        "wait": 10
     },
     {
         "word": "聞く",
@@ -513,8 +513,8 @@
         "sentence": "彼女はラジオを聞いています。",
         "translation": "She's listening to the radio.",
         "rank": 47,
-        "mastery": 15,
-        "wait": 3
+        "mastery": 18,
+        "wait": 10
     },
     {
         "word": "どう",
@@ -524,8 +524,8 @@
         "sentence": "あなたはどう思いますか。",
         "translation": "What do you think?",
         "rank": 48,
-        "mastery": 14,
-        "wait": 3
+        "mastery": 17,
+        "wait": 10
     },
     {
         "word": "生きる",
@@ -535,8 +535,8 @@
         "sentence": "皆一生懸命生きている。",
         "translation": "They're all living their lives the best way that they can.",
         "rank": 49,
-        "mastery": 13,
-        "wait": 3
+        "mastery": 16,
+        "wait": 10
     },
     {
         "word": "言葉",
@@ -546,8 +546,8 @@
         "sentence": "この言葉の意味が分かりません。",
         "translation": "I don't understand the meaning of this word.",
         "rank": 50,
-        "mastery": 12,
-        "wait": 3
+        "mastery": 15,
+        "wait": 10
     },
     {
         "word": "顔",
@@ -557,7 +557,7 @@
         "sentence": "彼はタオルで顔を拭きました。",
         "translation": "He wiped his face with a towel.",
         "rank": 51,
-        "mastery": 9,
+        "mastery": 13,
         "wait": 1
     },
     {
@@ -568,8 +568,8 @@
         "sentence": "あの本をどこに置きましたか。",
         "translation": "Where did you put that book?",
         "rank": 52,
-        "mastery": 10,
-        "wait": 3
+        "mastery": 14,
+        "wait": 10
     },
     {
         "word": "一つ",
@@ -579,8 +579,8 @@
         "sentence": "それを一つください。",
         "translation": "Please give me one of those.",
         "rank": 53,
-        "mastery": 8,
-        "wait": 2
+        "mastery": 12,
+        "wait": 9
     },
     {
         "word": "あげる",
@@ -590,8 +590,8 @@
         "sentence": "この本、あなたにあげます。",
         "translation": "I'll give you this book.",
         "rank": 54,
-        "mastery": 7,
-        "wait": 2
+        "mastery": 11,
+        "wait": 10
     },
     {
         "word": "こう",
@@ -601,8 +601,8 @@
         "sentence": "こう小さい字は読めない。",
         "translation": "I can't read such small letters.",
         "rank": 55,
-        "mastery": 5,
-        "wait": 1
+        "mastery": 9,
+        "wait": 7
     },
     {
         "word": "学校",
@@ -612,8 +612,8 @@
         "sentence": "学校は8時半に始まります。",
         "translation": "School starts at 8:30.",
         "rank": 56,
-        "mastery": 4,
-        "wait": 1
+        "mastery": 8,
+        "wait": 8
     },
     {
         "word": "くれる",
@@ -623,8 +623,8 @@
         "sentence": "友達が誕生日プレゼントをくれた。",
         "translation": "My friend gave me a birthday present.",
         "rank": 57,
-        "mastery": 4,
-        "wait": 2
+        "mastery": 7,
+        "wait": 8
     },
     {
         "word": "起きる",
@@ -634,8 +634,8 @@
         "sentence": "私は毎朝6時に起きます。",
         "translation": "I get up at six o'clock every morning.",
         "rank": 58,
-        "mastery": 2,
-        "wait": 1
+        "mastery": 4,
+        "wait": 0
     },
     {
         "word": "春",
@@ -645,8 +645,8 @@
         "sentence": "今年の春は暖かいね。",
         "translation": "It's warm this spring, isn't it.",
         "rank": 59,
-        "mastery": 1,
-        "wait": 1
+        "mastery": 3,
+        "wait": 0
     },
     {
         "word": "午前",
@@ -656,8 +656,8 @@
         "sentence": "午前9時のニュースです。",
         "translation": "And now for the 9.00 a.m. news.",
         "rank": 60,
-        "mastery": 0,
-        "wait": 3
+        "mastery": 2,
+        "wait": 0
     },
     {
         "word": "買う",
@@ -667,7 +667,7 @@
         "sentence": "郵便局で切手を買いました。",
         "translation": "I bought a stamp at the post office.",
         "rank": 61,
-        "mastery": 0,
+        "mastery": 3,
         "wait": 0
     },
     {
