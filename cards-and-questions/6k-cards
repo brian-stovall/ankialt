@@ -722,8 +722,8 @@
         "sentence": "彼はかばんをいすの上に置きました。",
         "translation": "He put the bag on the chair.",
         "rank": 66,
-        "mastery": 0,
-        "wait": 3
+        "mastery": 6,
+        "wait": 7
     },
     {
         "word": "住む",
@@ -733,8 +733,8 @@
         "sentence": "彼は会社の近くに住んでいる。",
         "translation": "He lives near his office.",
         "rank": 67,
-        "mastery": 0,
-        "wait": 4
+        "mastery": 2,
+        "wait": 3
     },
     {
         "word": "戻る",
@@ -744,8 +744,8 @@
         "sentence": "今、会社に戻ります。",
         "translation": "I'm going back to the office now.",
         "rank": 68,
-        "mastery": 0,
-        "wait": 4
+        "mastery": 4,
+        "wait": 5
     },
     {
         "word": "働く",
@@ -756,7 +756,7 @@
         "translation": "My big sister works at a bank.",
         "rank": 69,
         "mastery": 0,
-        "wait": 1
+        "wait": 0
     },
     {
         "word": "後",

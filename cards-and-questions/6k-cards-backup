@@ -667,8 +667,8 @@
         "sentence": "郵便局で切手を買いました。",
         "translation": "I bought a stamp at the post office.",
         "rank": 61,
-        "mastery": 12,
-        "wait": 13
+        "mastery": 11,
+        "wait": 0
     },
     {
         "word": "別",
@@ -678,8 +678,8 @@
         "sentence": "別の本も見せてください。",
         "translation": "Please show me another book.",
         "rank": 62,
-        "mastery": 11,
-        "wait": 12
+        "mastery": 10,
+        "wait": 0
     },
     {
         "word": "終わる",
@@ -689,8 +689,8 @@
         "sentence": "会議は4時に終わります。",
         "translation": "The conference ends at four o'clock.",
         "rank": 63,
-        "mastery": 10,
-        "wait": 11
+        "mastery": 9,
+        "wait": 0
     },
     {
         "word": "若い",
@@ -722,8 +722,8 @@
         "sentence": "彼はかばんをいすの上に置きました。",
         "translation": "He put the bag on the chair.",
         "rank": 66,
-        "mastery": 0,
-        "wait": 3
+        "mastery": 5,
+        "wait": 0
     },
     {
         "word": "住む",
@@ -733,8 +733,8 @@
         "sentence": "彼は会社の近くに住んでいる。",
         "translation": "He lives near his office.",
         "rank": 67,
-        "mastery": 0,
-        "wait": 4
+        "mastery": 1,
+        "wait": 0
     },
     {
         "word": "戻る",

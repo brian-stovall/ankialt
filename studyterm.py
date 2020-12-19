@@ -60,13 +60,16 @@ def init(configfile='quiz-config'):
     study(cards, quest, configfile)
 
 def study(cardfile, questionfile, configfile):
+    unihan = None
+    with open('./dicts/unihan.json') as infile:
+        unihan=json.loads(infile.read())
     with open(configfile, 'w') as conf_file:
         conf_file.write(cardfile+'|'+ questionfile)
     cards = loadjson(cardfile)
     questions = loadjson(questionfile)
-    ask(cards, cardfile, questions)
+    ask(cards, cardfile, questions, unihan)
 
-def ask(cards, cardfile, questions):
+def ask(cards, cardfile, questions, unihan):
     global num_studied
     os.system('clear')
     print('#',num_studied)
@@ -74,18 +77,24 @@ def ask(cards, cardfile, questions):
     question = getQuestion(questions)
     for field in question['question']:
         print(field, str(card[field]))
+    sentence = card['sentence']
     print()
     input()
     for field in question['answer']:
-        print(field, str(card[field]))
+        if field != 'pinyin':
+            print(field, str(card[field]))
+    for symbol in sentence:
+        if symbol in unihan.keys():
+            unidata = unihan[symbol]
+            print(symbol, ''.join(unidata['pinyin']), ''.join(unidata['definition']))
     choice = input('n if not correct - q to quit')
-    if choice == 'q':
+    if 'q' in choice:
         quitStudy(cardfile, cards)
-    elif choice == None:
-        masterCard(card)
-    else:
+    elif 'n' in choice:
         failCard(card)
+    else:
+        masterCard(card)
     num_studied = num_studied + 1
-    ask(cards, cardfile, questions)
+    ask(cards, cardfile, questions, unihan)
 
 init()
