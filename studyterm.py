@@ -95,6 +95,7 @@ def ask(cards, cardfile, questions, unihan):
     else:
         masterCard(card)
     num_studied = num_studied + 1
+    timePasses(cards)
     ask(cards, cardfile, questions, unihan)
 
 init()
