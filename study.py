@@ -187,12 +187,6 @@ def main():
     #win.geometry('1200x800')
     init(win)
     win.mainloop()
-    '''
-    qFrame = tk.Frame(win)
-    aFrame = tk.Frame(win)
-    toolsFrame = tk.Frame(win)
-    quitButton = tk.Button(toolsFrame, text='Finish session',
-        command=lambda:)
-    '''
 
-main()
+def mainterm():
+
