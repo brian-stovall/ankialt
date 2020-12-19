@@ -524,8 +524,8 @@
         "sentence": "あなたはどう思いますか。",
         "translation": "What do you think?",
         "rank": 48,
-        "mastery": 20,
-        "wait": 14
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "生きる",
@@ -535,8 +535,8 @@
         "sentence": "皆一生懸命生きている。",
         "translation": "They're all living their lives the best way that they can.",
         "rank": 49,
-        "mastery": 19,
-        "wait": 14
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "言葉",
@@ -546,8 +546,8 @@
         "sentence": "この言葉の意味が分かりません。",
         "translation": "I don't understand the meaning of this word.",
         "rank": 50,
-        "mastery": 18,
-        "wait": 14
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "顔",
@@ -557,8 +557,8 @@
         "sentence": "彼はタオルで顔を拭きました。",
         "translation": "He wiped his face with a towel.",
         "rank": 51,
-        "mastery": 17,
-        "wait": 14
+        "mastery": 20,
+        "wait": 16
     },
     {
         "word": "どこ",
@@ -568,8 +568,8 @@
         "sentence": "あの本をどこに置きましたか。",
         "translation": "Where did you put that book?",
         "rank": 52,
-        "mastery": 17,
-        "wait": 15
+        "mastery": 20,
+        "wait": 17
     },
     {
         "word": "一つ",
@@ -579,8 +579,8 @@
         "sentence": "それを一つください。",
         "translation": "Please give me one of those.",
         "rank": 53,
-        "mastery": 16,
-        "wait": 15
+        "mastery": 19,
+        "wait": 17
     },
     {
         "word": "あげる",
@@ -590,8 +590,8 @@
         "sentence": "この本、あなたにあげます。",
         "translation": "I'll give you this book.",
         "rank": 54,
-        "mastery": 15,
-        "wait": 15
+        "mastery": 18,
+        "wait": 17
     },
     {
         "word": "こう",
@@ -601,8 +601,8 @@
         "sentence": "こう小さい字は読めない。",
         "translation": "I can't read such small letters.",
         "rank": 55,
-        "mastery": 13,
-        "wait": 5
+        "mastery": 17,
+        "wait": 17
     },
     {
         "word": "学校",
@@ -612,8 +612,8 @@
         "sentence": "学校は8時半に始まります。",
         "translation": "School starts at 8:30.",
         "rank": 56,
-        "mastery": 12,
-        "wait": 13
+        "mastery": 16,
+        "wait": 17
     },
     {
         "word": "くれる",
@@ -623,7 +623,7 @@
         "sentence": "友達が誕生日プレゼントをくれた。",
         "translation": "My friend gave me a birthday present.",
         "rank": 57,
-        "mastery": 10,
+        "mastery": 14,
         "wait": 0
     },
     {
@@ -634,8 +634,8 @@
         "sentence": "私は毎朝6時に起きます。",
         "translation": "I get up at six o'clock every morning.",
         "rank": 58,
-        "mastery": 9,
-        "wait": 0
+        "mastery": 13,
+        "wait": 7
     },
     {
         "word": "春",
@@ -645,7 +645,7 @@
         "sentence": "今年の春は暖かいね。",
         "translation": "It's warm this spring, isn't it.",
         "rank": 59,
-        "mastery": 7,
+        "mastery": 11,
         "wait": 0
     },
     {
@@ -656,7 +656,7 @@
         "sentence": "午前9時のニュースです。",
         "translation": "And now for the 9.00 a.m. news.",
         "rank": 60,
-        "mastery": 5,
+        "mastery": 10,
         "wait": 0
     },
     {
@@ -667,7 +667,7 @@
         "sentence": "郵便局で切手を買いました。",
         "translation": "I bought a stamp at the post office.",
         "rank": 61,
-        "mastery": 6,
+        "mastery": 9,
         "wait": 0
     },
     {
@@ -678,7 +678,7 @@
         "sentence": "別の本も見せてください。",
         "translation": "Please show me another book.",
         "rank": 62,
-        "mastery": 2,
+        "mastery": 7,
         "wait": 0
     },
     {
@@ -689,7 +689,7 @@
         "sentence": "会議は4時に終わります。",
         "translation": "The conference ends at four o'clock.",
         "rank": 63,
-        "mastery": 3,
+        "mastery": 7,
         "wait": 0
     },
     {
@@ -700,7 +700,7 @@
         "sentence": "彼はまだ若いです。",
         "translation": "He's still young.",
         "rank": 64,
-        "mastery": 1,
+        "mastery": 3,
         "wait": 0
     },
     {
@@ -711,7 +711,7 @@
         "sentence": "彼はかなり英語が上手です。",
         "translation": "He's pretty good at English.",
         "rank": 65,
-        "mastery": 1,
+        "mastery": 4,
         "wait": 0
     },
     {
@@ -722,7 +722,7 @@
         "sentence": "彼はかばんをいすの上に置きました。",
         "translation": "He put the bag on the chair.",
         "rank": 66,
-        "mastery": 0,
+        "mastery": 3,
         "wait": 0
     },
     {
@@ -733,7 +733,7 @@
         "sentence": "彼は会社の近くに住んでいる。",
         "translation": "He lives near his office.",
         "rank": 67,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
@@ -744,7 +744,7 @@
         "sentence": "今、会社に戻ります。",
         "translation": "I'm going back to the office now.",
         "rank": 68,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {

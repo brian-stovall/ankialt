@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import json
+import json, os
 from tkinter import font
 thefont = font = 'arial 15'
 #thefont = tk.font.Font(family='Arial', size=20)
@@ -161,6 +161,27 @@ def c_display_result(value, cedict_result, dframe):
     meaningsFrame.pack()
     dframe.pack()
 
+def termdisplay(unihan, lookup):
+    os.system('clear')
+    for value in lookup:
+        if value in unihan.keys():
+            unihan_result = unihan[value]
+            print(value)
+            print('*' * (len(value) + 2))
+            for k,v in unihan_result.items():
+                if k != 'onyomi':
+                    print(k + ':', ', '.join(v))
+            print()
+
+def mainterm():
+    unihan = None
+    with open('./dicts/unihan.json') as infile:
+        unihan=json.loads(infile.read())
+    running = True
+    while running:
+        lookup =input()
+        termdisplay(unihan, lookup)
+
 
 def main(lang='c'):
     win = tk.Tk()
@@ -172,4 +193,4 @@ def main(lang='c'):
     win.mainloop()
 
 #main(lang='c')
-main(lang='j')
+mainterm()
