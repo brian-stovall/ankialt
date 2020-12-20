@@ -613,7 +613,7 @@
         "translation": "School starts at 8:30.",
         "rank": 56,
         "mastery": 20,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "くれる",
@@ -624,7 +624,7 @@
         "translation": "My friend gave me a birthday present.",
         "rank": 57,
         "mastery": 19,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "起きる",
@@ -635,7 +635,7 @@
         "translation": "I get up at six o'clock every morning.",
         "rank": 58,
         "mastery": 18,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "春",
@@ -646,7 +646,7 @@
         "translation": "It's warm this spring, isn't it.",
         "rank": 59,
         "mastery": 17,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "午前",
@@ -657,7 +657,7 @@
         "translation": "And now for the 9.00 a.m. news.",
         "rank": 60,
         "mastery": 16,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "買う",
@@ -668,7 +668,7 @@
         "translation": "I bought a stamp at the post office.",
         "rank": 61,
         "mastery": 15,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "別",
@@ -679,7 +679,7 @@
         "translation": "Please show me another book.",
         "rank": 62,
         "mastery": 14,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "終わる",
@@ -690,7 +690,7 @@
         "translation": "The conference ends at four o'clock.",
         "rank": 63,
         "mastery": 13,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "若い",
@@ -701,7 +701,7 @@
         "translation": "He's still young.",
         "rank": 64,
         "mastery": 12,
-        "wait": 7
+        "wait": 4
     },
     {
         "word": "かなり",
@@ -712,7 +712,7 @@
         "translation": "He's pretty good at English.",
         "rank": 65,
         "mastery": 11,
-        "wait": 4
+        "wait": 1
     },
     {
         "word": "置く",
@@ -723,7 +723,7 @@
         "translation": "He put the bag on the chair.",
         "rank": 66,
         "mastery": 10,
-        "wait": 4
+        "wait": 1
     },
     {
         "word": "住む",
@@ -734,7 +734,7 @@
         "translation": "He lives near his office.",
         "rank": 67,
         "mastery": 7,
-        "wait": 3
+        "wait": 0
     },
     {
         "word": "戻る",
@@ -745,7 +745,7 @@
         "translation": "I'm going back to the office now.",
         "rank": 68,
         "mastery": 8,
-        "wait": 5
+        "wait": 2
     },
     {
         "word": "働く",
@@ -755,8 +755,8 @@
         "sentence": "姉は銀行で働いています。",
         "translation": "My big sister works at a bank.",
         "rank": 69,
-        "mastery": 4,
-        "wait": 2
+        "mastery": 5,
+        "wait": 5
     },
     {
         "word": "後",
@@ -767,7 +767,7 @@
         "translation": "I saw a movie after work.",
         "rank": 70,
         "mastery": 3,
-        "wait": 2
+        "wait": 0
     },
     {
         "word": "先生",
@@ -778,7 +778,7 @@
         "translation": "I want to become a Japanese teacher.",
         "rank": 71,
         "mastery": 0,
-        "wait": 3
+        "wait": 0
     },
     {
         "word": "立つ",
@@ -789,7 +789,7 @@
         "translation": "He stood on stage.",
         "rank": 72,
         "mastery": 0,
-        "wait": 0
+        "wait": 1
     },
     {
         "word": "気",
@@ -799,8 +799,8 @@
         "sentence": "彼は意外に気が小さい。",
         "translation": "He's unexpectedly timid.",
         "rank": 73,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 2,
+        "wait": 1
     },
     {
         "word": "呼ぶ",
