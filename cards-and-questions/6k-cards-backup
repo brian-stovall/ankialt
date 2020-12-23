@@ -700,8 +700,8 @@
         "sentence": "彼はまだ若いです。",
         "translation": "He's still young.",
         "rank": 64,
-        "mastery": 20,
-        "wait": 14
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "かなり",
@@ -711,8 +711,8 @@
         "sentence": "彼はかなり英語が上手です。",
         "translation": "He's pretty good at English.",
         "rank": 65,
-        "mastery": 20,
-        "wait": 15
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "置く",
@@ -722,8 +722,8 @@
         "sentence": "彼はかばんをいすの上に置きました。",
         "translation": "He put the bag on the chair.",
         "rank": 66,
-        "mastery": 19,
-        "wait": 15
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "住む",
@@ -733,8 +733,8 @@
         "sentence": "彼は会社の近くに住んでいる。",
         "translation": "He lives near his office.",
         "rank": 67,
-        "mastery": 18,
-        "wait": 15
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "戻る",
@@ -744,8 +744,8 @@
         "sentence": "今、会社に戻ります。",
         "translation": "I'm going back to the office now.",
         "rank": 68,
-        "mastery": 17,
-        "wait": 15
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "働く",
@@ -755,8 +755,8 @@
         "sentence": "姉は銀行で働いています。",
         "translation": "My big sister works at a bank.",
         "rank": 69,
-        "mastery": 16,
-        "wait": 15
+        "mastery": 20,
+        "wait": 20
     },
     {
         "word": "後",
@@ -766,8 +766,8 @@
         "sentence": "仕事の後、映画を見た。",
         "translation": "I saw a movie after work.",
         "rank": 70,
-        "mastery": 15,
-        "wait": 15
+        "mastery": 18,
+        "wait": 0
     },
     {
         "word": "先生",
@@ -777,7 +777,7 @@
         "sentence": "私は日本語の先生になりたいです。",
         "translation": "I want to become a Japanese teacher.",
         "rank": 71,
-        "mastery": 13,
+        "mastery": 17,
         "wait": 0
     },
     {
@@ -788,8 +788,8 @@
         "sentence": "彼はステージに立った。",
         "translation": "He stood on stage.",
         "rank": 72,
-        "mastery": 11,
-        "wait": 2
+        "mastery": 16,
+        "wait": 1
     },
     {
         "word": "気",
@@ -799,8 +799,8 @@
         "sentence": "彼は意外に気が小さい。",
         "translation": "He's unexpectedly timid.",
         "rank": 73,
-        "mastery": 11,
-        "wait": 3
+        "mastery": 16,
+        "wait": 8
     },
     {
         "word": "呼ぶ",
@@ -810,8 +810,8 @@
         "sentence": "ウェイターを呼びましょう。",
         "translation": "Let's call the waiter.",
         "rank": 74,
-        "mastery": 6,
-        "wait": 0
+        "mastery": 13,
+        "wait": 1
     },
     {
         "word": "もっと",
@@ -821,8 +821,8 @@
         "sentence": "もっと近くに来てください。",
         "translation": "Please come closer.",
         "rank": 75,
-        "mastery": 6,
-        "wait": 0
+        "mastery": 13,
+        "wait": 8
     },
     {
         "word": "帰る",
@@ -832,8 +832,8 @@
         "sentence": "家に帰ろう。",
         "translation": "Let's go home.",
         "rank": 76,
-        "mastery": 4,
-        "wait": 0
+        "mastery": 11,
+        "wait": 5
     },
     {
         "word": "気持ち",
@@ -843,8 +843,8 @@
         "sentence": "彼の気持ちが分からない。",
         "translation": "I don't understand his feelings.",
         "rank": 77,
-        "mastery": 3,
-        "wait": 0
+        "mastery": 10,
+        "wait": 6
     },
     {
         "word": "飛ぶ",
@@ -854,8 +854,8 @@
         "sentence": "鳥が飛んでいます。",
         "translation": "A bird is flying.",
         "rank": 78,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 6,
+        "wait": 3
     },
     {
         "word": "車",
@@ -865,8 +865,8 @@
         "sentence": "弟が車を買った。",
         "translation": "My younger brother bought a car.",
         "rank": 79,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 7,
+        "wait": 5
     },
     {
         "word": "変える",
@@ -876,7 +876,7 @@
         "sentence": "旅行の日程を変えました。",
         "translation": "I changed our travel schedule.",
         "rank": 80,
-        "mastery": 0,
+        "mastery": 2,
         "wait": 0
     },
     {
