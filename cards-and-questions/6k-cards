@@ -766,8 +766,8 @@
         "sentence": "仕事の後、映画を見た。",
         "translation": "I saw a movie after work.",
         "rank": 70,
-        "mastery": 20,
-        "wait": 10
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "先生",
@@ -777,8 +777,8 @@
         "sentence": "私は日本語の先生になりたいです。",
         "translation": "I want to become a Japanese teacher.",
         "rank": 71,
-        "mastery": 19,
-        "wait": 10
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "立つ",
@@ -788,8 +788,8 @@
         "sentence": "彼はステージに立った。",
         "translation": "He stood on stage.",
         "rank": 72,
-        "mastery": 18,
-        "wait": 10
+        "mastery": 20,
+        "wait": 9
     },
     {
         "word": "気",
@@ -799,8 +799,8 @@
         "sentence": "彼は意外に気が小さい。",
         "translation": "He's unexpectedly timid.",
         "rank": 73,
-        "mastery": 18,
-        "wait": 13
+        "mastery": 20,
+        "wait": 10
     },
     {
         "word": "呼ぶ",
@@ -810,8 +810,8 @@
         "sentence": "ウェイターを呼びましょう。",
         "translation": "Let's call the waiter.",
         "rank": 74,
-        "mastery": 15,
-        "wait": 2
+        "mastery": 18,
+        "wait": 11
     },
     {
         "word": "もっと",
@@ -821,8 +821,8 @@
         "sentence": "もっと近くに来てください。",
         "translation": "Please come closer.",
         "rank": 75,
-        "mastery": 15,
-        "wait": 8
+        "mastery": 18,
+        "wait": 17
     },
     {
         "word": "帰る",
@@ -832,8 +832,8 @@
         "sentence": "家に帰ろう。",
         "translation": "Let's go home.",
         "rank": 76,
-        "mastery": 13,
-        "wait": 1
+        "mastery": 16,
+        "wait": 7
     },
     {
         "word": "気持ち",
@@ -843,8 +843,8 @@
         "sentence": "彼の気持ちが分からない。",
         "translation": "I don't understand his feelings.",
         "rank": 77,
-        "mastery": 12,
-        "wait": 6
+        "mastery": 15,
+        "wait": 7
     },
     {
         "word": "飛ぶ",
@@ -854,8 +854,8 @@
         "sentence": "鳥が飛んでいます。",
         "translation": "A bird is flying.",
         "rank": 78,
-        "mastery": 9,
-        "wait": 5
+        "mastery": 13,
+        "wait": 11
     },
     {
         "word": "車",
@@ -865,7 +865,7 @@
         "sentence": "弟が車を買った。",
         "translation": "My younger brother bought a car.",
         "rank": 79,
-        "mastery": 10,
+        "mastery": 13,
         "wait": 7
     },
     {
@@ -876,8 +876,8 @@
         "sentence": "旅行の日程を変えました。",
         "translation": "I changed our travel schedule.",
         "rank": 80,
-        "mastery": 5,
-        "wait": 3
+        "mastery": 10,
+        "wait": 7
     },
     {
         "word": "広い",
@@ -887,8 +887,8 @@
         "sentence": "彼の家はとても広い。",
         "translation": "His house is very big.",
         "rank": 81,
-        "mastery": 3,
-        "wait": 2
+        "mastery": 8,
+        "wait": 3
     },
     {
         "word": "分かる",
@@ -898,7 +898,7 @@
         "sentence": "質問の意味は分かりましたか。",
         "translation": "Did you understand the meaning of the question?",
         "rank": 82,
-        "mastery": 1,
+        "mastery": 5,
         "wait": 1
     },
     {
@@ -909,8 +909,8 @@
         "sentence": "グラスの数が足りません。",
         "translation": "There are not enough glasses.",
         "rank": 83,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 3,
+        "wait": 3
     },
     {
         "word": "近い",
