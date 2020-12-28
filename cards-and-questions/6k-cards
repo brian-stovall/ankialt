@@ -876,8 +876,8 @@
         "sentence": "旅行の日程を変えました。",
         "translation": "I changed our travel schedule.",
         "rank": 80,
-        "mastery": 19,
-        "wait": 19
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "広い",
@@ -887,8 +887,8 @@
         "sentence": "彼の家はとても広い。",
         "translation": "His house is very big.",
         "rank": 81,
-        "mastery": 17,
-        "wait": 0
+        "mastery": 20,
+        "wait": 10
     },
     {
         "word": "分かる",
@@ -898,8 +898,8 @@
         "sentence": "質問の意味は分かりましたか。",
         "translation": "Did you understand the meaning of the question?",
         "rank": 82,
-        "mastery": 16,
-        "wait": 8
+        "mastery": 19,
+        "wait": 13
     },
     {
         "word": "数",
@@ -909,8 +909,8 @@
         "sentence": "グラスの数が足りません。",
         "translation": "There are not enough glasses.",
         "rank": 83,
-        "mastery": 15,
-        "wait": 12
+        "mastery": 18,
+        "wait": 14
     },
     {
         "word": "近い",
@@ -920,8 +920,8 @@
         "sentence": "駅はここから近いです。",
         "translation": "The station is near here.",
         "rank": 84,
-        "mastery": 14,
-        "wait": 12
+        "mastery": 17,
+        "wait": 14
     },
     {
         "word": "そこ",
@@ -931,8 +931,8 @@
         "sentence": "そこに座ってください。",
         "translation": "Please sit there.",
         "rank": 85,
-        "mastery": 12,
-        "wait": 0
+        "mastery": 16,
+        "wait": 14
     },
     {
         "word": "走る",
@@ -942,8 +942,8 @@
         "sentence": "彼は毎晩3キロ走っています。",
         "translation": "Every night he runs three kilometers.",
         "rank": 86,
-        "mastery": 11,
-        "wait": 0
+        "mastery": 15,
+        "wait": 14
     },
     {
         "word": "売る",
@@ -953,8 +953,8 @@
         "sentence": "彼は家を売った。",
         "translation": "He sold the house.",
         "rank": 87,
-        "mastery": 10,
-        "wait": 3
+        "mastery": 14,
+        "wait": 14
     },
     {
         "word": "朝",
@@ -964,8 +964,8 @@
         "sentence": "気持ちのいい朝です。",
         "translation": "It's a pleasant morning.",
         "rank": 88,
-        "mastery": 8,
-        "wait": 3
+        "mastery": 12,
+        "wait": 0
     },
     {
         "word": "教える",
@@ -975,8 +975,8 @@
         "sentence": "彼は数学を教えています。",
         "translation": "He teaches mathematics.",
         "rank": 89,
-        "mastery": 4,
-        "wait": 0
+        "mastery": 10,
+        "wait": 5
     },
     {
         "word": "歩く",
@@ -986,7 +986,7 @@
         "sentence": "駅まで歩きましょう。",
         "translation": "Let's walk to the station.",
         "rank": 90,
-        "mastery": 0,
+        "mastery": 6,
         "wait": 0
     },
     {
@@ -997,7 +997,7 @@
         "sentence": "直ぐ行きます。",
         "translation": "I'll go right away.",
         "rank": 91,
-        "mastery": 0,
+        "mastery": 5,
         "wait": 0
     },
     {
@@ -1008,7 +1008,7 @@
         "sentence": "また会いましょう。",
         "translation": "Let's meet again.",
         "rank": 92,
-        "mastery": 1,
+        "mastery": 4,
         "wait": 0
     },
     {
