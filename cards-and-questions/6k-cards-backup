@@ -887,8 +887,8 @@
         "sentence": "彼の家はとても広い。",
         "translation": "His house is very big.",
         "rank": 81,
-        "mastery": 20,
-        "wait": 10
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "分かる",
@@ -898,8 +898,8 @@
         "sentence": "質問の意味は分かりましたか。",
         "translation": "Did you understand the meaning of the question?",
         "rank": 82,
-        "mastery": 19,
-        "wait": 13
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "数",
@@ -909,8 +909,8 @@
         "sentence": "グラスの数が足りません。",
         "translation": "There are not enough glasses.",
         "rank": 83,
-        "mastery": 18,
-        "wait": 14
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "近い",
@@ -920,8 +920,8 @@
         "sentence": "駅はここから近いです。",
         "translation": "The station is near here.",
         "rank": 84,
-        "mastery": 17,
-        "wait": 14
+        "mastery": 20,
+        "wait": 12
     },
     {
         "word": "そこ",
@@ -931,8 +931,8 @@
         "sentence": "そこに座ってください。",
         "translation": "Please sit there.",
         "rank": 85,
-        "mastery": 16,
-        "wait": 14
+        "mastery": 19,
+        "wait": 12
     },
     {
         "word": "走る",
@@ -942,8 +942,8 @@
         "sentence": "彼は毎晩3キロ走っています。",
         "translation": "Every night he runs three kilometers.",
         "rank": 86,
-        "mastery": 15,
-        "wait": 14
+        "mastery": 18,
+        "wait": 12
     },
     {
         "word": "売る",
@@ -953,8 +953,8 @@
         "sentence": "彼は家を売った。",
         "translation": "He sold the house.",
         "rank": 87,
-        "mastery": 14,
-        "wait": 14
+        "mastery": 17,
+        "wait": 12
     },
     {
         "word": "朝",
@@ -964,8 +964,8 @@
         "sentence": "気持ちのいい朝です。",
         "translation": "It's a pleasant morning.",
         "rank": 88,
-        "mastery": 12,
-        "wait": 0
+        "mastery": 16,
+        "wait": 12
     },
     {
         "word": "教える",
@@ -975,8 +975,8 @@
         "sentence": "彼は数学を教えています。",
         "translation": "He teaches mathematics.",
         "rank": 89,
-        "mastery": 10,
-        "wait": 5
+        "mastery": 15,
+        "wait": 12
     },
     {
         "word": "歩く",
@@ -986,8 +986,8 @@
         "sentence": "駅まで歩きましょう。",
         "translation": "Let's walk to the station.",
         "rank": 90,
-        "mastery": 6,
-        "wait": 0
+        "mastery": 12,
+        "wait": 1
     },
     {
         "word": "直ぐ",
@@ -997,8 +997,8 @@
         "sentence": "直ぐ行きます。",
         "translation": "I'll go right away.",
         "rank": 91,
-        "mastery": 5,
-        "wait": 0
+        "mastery": 11,
+        "wait": 1
     },
     {
         "word": "会う",
@@ -1008,8 +1008,8 @@
         "sentence": "また会いましょう。",
         "translation": "Let's meet again.",
         "rank": 92,
-        "mastery": 4,
-        "wait": 0
+        "mastery": 10,
+        "wait": 8
     },
     {
         "word": "部屋",
@@ -1019,8 +1019,8 @@
         "sentence": "私の部屋は2階にあります。",
         "translation": "My room is on the second floor.",
         "rank": 93,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 7,
+        "wait": 6
     },
     {
         "word": "起こる",
@@ -1030,8 +1030,8 @@
         "sentence": "町で大事件が起こりました。",
         "translation": "There was a major incident in town.",
         "rank": 94,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 6,
+        "wait": 6
     },
     {
         "word": "秋",
@@ -1041,7 +1041,7 @@
         "sentence": "彼女は秋に結婚します。",
         "translation": "She'll get married this fall.",
         "rank": 95,
-        "mastery": 0,
+        "mastery": 3,
         "wait": 0
     },
     {
@@ -1052,7 +1052,7 @@
         "sentence": "この本は難しいですね。",
         "translation": "This book is difficult.",
         "rank": 96,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
