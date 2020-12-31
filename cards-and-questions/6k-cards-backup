@@ -920,8 +920,8 @@
         "sentence": "駅はここから近いです。",
         "translation": "The station is near here.",
         "rank": 84,
-        "mastery": 20,
-        "wait": 12
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "そこ",
@@ -931,8 +931,8 @@
         "sentence": "そこに座ってください。",
         "translation": "Please sit there.",
         "rank": 85,
-        "mastery": 19,
-        "wait": 12
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "走る",
@@ -942,8 +942,8 @@
         "sentence": "彼は毎晩3キロ走っています。",
         "translation": "Every night he runs three kilometers.",
         "rank": 86,
-        "mastery": 18,
-        "wait": 12
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "売る",
@@ -953,8 +953,8 @@
         "sentence": "彼は家を売った。",
         "translation": "He sold the house.",
         "rank": 87,
-        "mastery": 17,
-        "wait": 12
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "朝",
@@ -964,8 +964,8 @@
         "sentence": "気持ちのいい朝です。",
         "translation": "It's a pleasant morning.",
         "rank": 88,
-        "mastery": 16,
-        "wait": 12
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "教える",
@@ -975,8 +975,8 @@
         "sentence": "彼は数学を教えています。",
         "translation": "He teaches mathematics.",
         "rank": 89,
-        "mastery": 15,
-        "wait": 12
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "歩く",
@@ -986,8 +986,8 @@
         "sentence": "駅まで歩きましょう。",
         "translation": "Let's walk to the station.",
         "rank": 90,
-        "mastery": 12,
-        "wait": 1
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "直ぐ",
@@ -997,8 +997,8 @@
         "sentence": "直ぐ行きます。",
         "translation": "I'll go right away.",
         "rank": 91,
-        "mastery": 11,
-        "wait": 1
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "会う",
@@ -1008,7 +1008,7 @@
         "sentence": "また会いましょう。",
         "translation": "Let's meet again.",
         "rank": 92,
-        "mastery": 10,
+        "mastery": 20,
         "wait": 8
     },
     {
@@ -1019,8 +1019,8 @@
         "sentence": "私の部屋は2階にあります。",
         "translation": "My room is on the second floor.",
         "rank": 93,
-        "mastery": 7,
-        "wait": 6
+        "mastery": 19,
+        "wait": 14
     },
     {
         "word": "起こる",
@@ -1030,8 +1030,8 @@
         "sentence": "町で大事件が起こりました。",
         "translation": "There was a major incident in town.",
         "rank": 94,
-        "mastery": 6,
-        "wait": 6
+        "mastery": 18,
+        "wait": 16
     },
     {
         "word": "秋",
@@ -1041,8 +1041,8 @@
         "sentence": "彼女は秋に結婚します。",
         "translation": "She'll get married this fall.",
         "rank": 95,
-        "mastery": 3,
-        "wait": 0
+        "mastery": 17,
+        "wait": 16
     },
     {
         "word": "難しい",
@@ -1052,8 +1052,8 @@
         "sentence": "この本は難しいですね。",
         "translation": "This book is difficult.",
         "rank": 96,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 16,
+        "wait": 16
     },
     {
         "word": "送る",
@@ -1063,8 +1063,8 @@
         "sentence": "彼の家に荷物を送りました。",
         "translation": "I sent a package to his house.",
         "rank": 97,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 14,
+        "wait": 3
     },
     {
         "word": "死ぬ",
@@ -1074,8 +1074,8 @@
         "sentence": "犬が病気で死にました。",
         "translation": "Our dog got sick and died.",
         "rank": 98,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 13,
+        "wait": 9
     },
     {
         "word": "乗る",
@@ -1085,7 +1085,7 @@
         "sentence": "駅からはタクシーに乗ってください。",
         "translation": "Please take a taxi from the station.",
         "rank": 99,
-        "mastery": 0,
+        "mastery": 10,
         "wait": 0
     },
     {
@@ -1096,8 +1096,8 @@
         "sentence": "この服はとても安かった。",
         "translation": "These clothes were very cheap.",
         "rank": 100,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 10,
+        "wait": 4
     },
     {
         "word": "書く",
@@ -1107,8 +1107,8 @@
         "sentence": "彼に手紙を書きました。",
         "translation": "I wrote him a letter.",
         "rank": 101,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 8,
+        "wait": 1
     },
     {
         "word": "話す",
@@ -1118,7 +1118,7 @@
         "sentence": "母と電話で話しました。",
         "translation": "I spoke to my mother on the phone.",
         "rank": 102,
-        "mastery": 0,
+        "mastery": 6,
         "wait": 0
     },
     {
@@ -1129,8 +1129,8 @@
         "sentence": "今朝から頭が痛い。",
         "translation": "I've had a headache since this morning.",
         "rank": 103,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 5,
+        "wait": 2
     },
     {
         "word": "体",
