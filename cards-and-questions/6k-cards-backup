@@ -1063,8 +1063,8 @@
         "sentence": "彼の家に荷物を送りました。",
         "translation": "I sent a package to his house.",
         "rank": 97,
-        "mastery": 20,
-        "wait": 19
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "死ぬ",
@@ -1074,8 +1074,8 @@
         "sentence": "犬が病気で死にました。",
         "translation": "Our dog got sick and died.",
         "rank": 98,
-        "mastery": 19,
-        "wait": 19
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "乗る",
@@ -1085,8 +1085,8 @@
         "sentence": "駅からはタクシーに乗ってください。",
         "translation": "Please take a taxi from the station.",
         "rank": 99,
-        "mastery": 17,
-        "wait": 3
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "安い",
@@ -1096,8 +1096,8 @@
         "sentence": "この服はとても安かった。",
         "translation": "These clothes were very cheap.",
         "rank": 100,
-        "mastery": 17,
-        "wait": 9
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "書く",
@@ -1107,8 +1107,8 @@
         "sentence": "彼に手紙を書きました。",
         "translation": "I wrote him a letter.",
         "rank": 101,
-        "mastery": 16,
-        "wait": 12
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "話す",
@@ -1118,8 +1118,8 @@
         "sentence": "母と電話で話しました。",
         "translation": "I spoke to my mother on the phone.",
         "rank": 102,
-        "mastery": 15,
-        "wait": 12
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "頭",
@@ -1129,8 +1129,8 @@
         "sentence": "今朝から頭が痛い。",
         "translation": "I've had a headache since this morning.",
         "rank": 103,
-        "mastery": 13,
-        "wait": 0
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "体",
@@ -1140,8 +1140,8 @@
         "sentence": "私は体が丈夫だ。",
         "translation": "I'm physically strong.",
         "rank": 104,
-        "mastery": 9,
-        "wait": 2
+        "mastery": 20,
+        "wait": 3
     },
     {
         "word": "ここ",
@@ -1151,8 +1151,8 @@
         "sentence": "ここに本があります。",
         "translation": "There's a book here.",
         "rank": 105,
-        "mastery": 9,
-        "wait": 3
+        "mastery": 20,
+        "wait": 8
     },
     {
         "word": "待つ",
@@ -1162,8 +1162,8 @@
         "sentence": "あなたが来るのを待っています。",
         "translation": "I am waiting for you to come.",
         "rank": 106,
-        "mastery": 7,
-        "wait": 2
+        "mastery": 19,
+        "wait": 8
     },
     {
         "word": "低い",
@@ -1173,8 +1173,8 @@
         "sentence": "彼は背が低い。",
         "translation": "He's short.",
         "rank": 107,
-        "mastery": 4,
-        "wait": 0
+        "mastery": 17,
+        "wait": 1
     },
     {
         "word": "もらう",
@@ -1184,8 +1184,8 @@
         "sentence": "彼女からプレゼントをもらいました。",
         "translation": "I got a present from her.",
         "rank": 108,
-        "mastery": 3,
-        "wait": 0
+        "mastery": 16,
+        "wait": 1
     },
     {
         "word": "食べる",
@@ -1195,8 +1195,8 @@
         "sentence": "昨日タイカレーを食べました。",
         "translation": "I had Thai curry yesterday.",
         "rank": 109,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 15,
+        "wait": 1
     },
     {
         "word": "早い",
@@ -1206,8 +1206,8 @@
         "sentence": "まだ学校へ行くには早い時間です。",
         "translation": "It's still too early to go to school.",
         "rank": 110,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 14,
+        "wait": 1
     },
     {
         "word": "兄",
@@ -1217,8 +1217,8 @@
         "sentence": "兄は水泳が得意です。",
         "translation": "My big brother is good at swimming.",
         "rank": 111,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 11,
+        "wait": 1
     },
     {
         "word": "名前",
@@ -1228,8 +1228,8 @@
         "sentence": "あなたの名前を教えてください。",
         "translation": "Please tell me your name.",
         "rank": 112,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 10,
+        "wait": 1
     },
     {
         "word": "夫",
@@ -1239,8 +1239,8 @@
         "sentence": "私の夫はサラリーマンです。",
         "translation": "My husband is a company employee.",
         "rank": 113,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 9,
+        "wait": 1
     },
     {
         "word": "一",
@@ -1250,8 +1250,8 @@
         "sentence": "一から始めましょう。",
         "translation": "Let's start from the beginning.",
         "rank": 114,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 8,
+        "wait": 1
     },
     {
         "word": "結婚",
@@ -1262,7 +1262,7 @@
         "translation": "She's getting married next month.",
         "rank": 115,
         "mastery": 0,
-        "wait": 0
+        "wait": 3
     },
     {
         "word": "親",
@@ -1272,8 +1272,8 @@
         "sentence": "親の愛は有り難い。",
         "translation": "We're grateful for our parents' love.",
         "rank": 116,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 4,
+        "wait": 3
     },
     {
         "word": "古い",
@@ -1283,7 +1283,7 @@
         "sentence": "私は古い車が好きです。",
         "translation": "I like old cars.",
         "rank": 117,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
