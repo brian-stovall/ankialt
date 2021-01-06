@@ -1184,8 +1184,8 @@
         "sentence": "彼女からプレゼントをもらいました。",
         "translation": "I got a present from her.",
         "rank": 108,
-        "mastery": 20,
-        "wait": 17
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "食べる",
@@ -1195,8 +1195,8 @@
         "sentence": "昨日タイカレーを食べました。",
         "translation": "I had Thai curry yesterday.",
         "rank": 109,
-        "mastery": 19,
-        "wait": 17
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "早い",
@@ -1206,8 +1206,8 @@
         "sentence": "まだ学校へ行くには早い時間です。",
         "translation": "It's still too early to go to school.",
         "rank": 110,
-        "mastery": 18,
-        "wait": 17
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "兄",
@@ -1217,8 +1217,8 @@
         "sentence": "兄は水泳が得意です。",
         "translation": "My big brother is good at swimming.",
         "rank": 111,
-        "mastery": 16,
-        "wait": 16
+        "mastery": 19,
+        "wait": 7
     },
     {
         "word": "名前",
@@ -1228,8 +1228,8 @@
         "sentence": "あなたの名前を教えてください。",
         "translation": "Please tell me your name.",
         "rank": 112,
-        "mastery": 14,
-        "wait": 0
+        "mastery": 18,
+        "wait": 8
     },
     {
         "word": "夫",
@@ -1239,8 +1239,8 @@
         "sentence": "私の夫はサラリーマンです。",
         "translation": "My husband is a company employee.",
         "rank": 113,
-        "mastery": 13,
-        "wait": 0
+        "mastery": 17,
+        "wait": 8
     },
     {
         "word": "一",
@@ -1250,8 +1250,8 @@
         "sentence": "一から始めましょう。",
         "translation": "Let's start from the beginning.",
         "rank": 114,
-        "mastery": 12,
-        "wait": 0
+        "mastery": 16,
+        "wait": 8
     },
     {
         "word": "結婚",
@@ -1261,8 +1261,8 @@
         "sentence": "彼女は来月結婚します。",
         "translation": "She's getting married next month.",
         "rank": 115,
-        "mastery": 7,
-        "wait": 0
+        "mastery": 13,
+        "wait": 8
     },
     {
         "word": "親",
@@ -1272,8 +1272,8 @@
         "sentence": "親の愛は有り難い。",
         "translation": "We're grateful for our parents' love.",
         "rank": 116,
-        "mastery": 9,
-        "wait": 0
+        "mastery": 14,
+        "wait": 7
     },
     {
         "word": "古い",
@@ -1283,8 +1283,8 @@
         "sentence": "私は古い車が好きです。",
         "translation": "I like old cars.",
         "rank": 117,
-        "mastery": 7,
-        "wait": 0
+        "mastery": 13,
+        "wait": 10
     },
     {
         "word": "美しい",
@@ -1294,8 +1294,8 @@
         "sentence": "この絵は美しいです。",
         "translation": "This picture is beautiful.",
         "rank": 118,
-        "mastery": 6,
-        "wait": 0
+        "mastery": 11,
+        "wait": 11
     },
     {
         "word": "足",
@@ -1305,8 +1305,8 @@
         "sentence": "彼は足が長い。",
         "translation": "He has long legs.",
         "rank": 119,
-        "mastery": 2,
-        "wait": 0
+        "mastery": 9,
+        "wait": 7
     },
     {
         "word": "次",
@@ -1316,8 +1316,8 @@
         "sentence": "次はいつ会いましょうか。",
         "translation": "When shall we meet again?",
         "rank": 120,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 7,
+        "wait": 1
     },
     {
         "word": "起こす",
@@ -1327,8 +1327,8 @@
         "sentence": "明日、6時に起こしてください。",
         "translation": "Please wake me up tomorrow at six o'clock.",
         "rank": 121,
-        "mastery": 1,
-        "wait": 0
+        "mastery": 6,
+        "wait": 5
     },
     {
         "word": "見せる",
@@ -1338,7 +1338,7 @@
         "sentence": "その写真を見せてください。",
         "translation": "Please show me those pictures.",
         "rank": 122,
-        "mastery": 0,
+        "mastery": 3,
         "wait": 0
     },
     {
