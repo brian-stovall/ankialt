@@ -1140,8 +1140,8 @@
         "sentence": "私は体が丈夫だ。",
         "translation": "I'm physically strong.",
         "rank": 104,
-        "mastery": 20,
-        "wait": 3
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "ここ",
@@ -1151,8 +1151,8 @@
         "sentence": "ここに本があります。",
         "translation": "There's a book here.",
         "rank": 105,
-        "mastery": 20,
-        "wait": 8
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "待つ",
@@ -1162,8 +1162,8 @@
         "sentence": "あなたが来るのを待っています。",
         "translation": "I am waiting for you to come.",
         "rank": 106,
-        "mastery": 19,
-        "wait": 8
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "低い",
@@ -1173,8 +1173,8 @@
         "sentence": "彼は背が低い。",
         "translation": "He's short.",
         "rank": 107,
-        "mastery": 17,
-        "wait": 1
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "もらう",
@@ -1184,8 +1184,8 @@
         "sentence": "彼女からプレゼントをもらいました。",
         "translation": "I got a present from her.",
         "rank": 108,
-        "mastery": 16,
-        "wait": 1
+        "mastery": 20,
+        "wait": 17
     },
     {
         "word": "食べる",
@@ -1195,8 +1195,8 @@
         "sentence": "昨日タイカレーを食べました。",
         "translation": "I had Thai curry yesterday.",
         "rank": 109,
-        "mastery": 15,
-        "wait": 1
+        "mastery": 19,
+        "wait": 17
     },
     {
         "word": "早い",
@@ -1206,8 +1206,8 @@
         "sentence": "まだ学校へ行くには早い時間です。",
         "translation": "It's still too early to go to school.",
         "rank": 110,
-        "mastery": 14,
-        "wait": 1
+        "mastery": 18,
+        "wait": 17
     },
     {
         "word": "兄",
@@ -1217,8 +1217,8 @@
         "sentence": "兄は水泳が得意です。",
         "translation": "My big brother is good at swimming.",
         "rank": 111,
-        "mastery": 11,
-        "wait": 1
+        "mastery": 16,
+        "wait": 16
     },
     {
         "word": "名前",
@@ -1228,8 +1228,8 @@
         "sentence": "あなたの名前を教えてください。",
         "translation": "Please tell me your name.",
         "rank": 112,
-        "mastery": 10,
-        "wait": 1
+        "mastery": 14,
+        "wait": 0
     },
     {
         "word": "夫",
@@ -1239,8 +1239,8 @@
         "sentence": "私の夫はサラリーマンです。",
         "translation": "My husband is a company employee.",
         "rank": 113,
-        "mastery": 9,
-        "wait": 1
+        "mastery": 13,
+        "wait": 0
     },
     {
         "word": "一",
@@ -1250,8 +1250,8 @@
         "sentence": "一から始めましょう。",
         "translation": "Let's start from the beginning.",
         "rank": 114,
-        "mastery": 8,
-        "wait": 1
+        "mastery": 12,
+        "wait": 0
     },
     {
         "word": "結婚",
@@ -1261,8 +1261,8 @@
         "sentence": "彼女は来月結婚します。",
         "translation": "She's getting married next month.",
         "rank": 115,
-        "mastery": 0,
-        "wait": 3
+        "mastery": 7,
+        "wait": 0
     },
     {
         "word": "親",
@@ -1272,8 +1272,8 @@
         "sentence": "親の愛は有り難い。",
         "translation": "We're grateful for our parents' love.",
         "rank": 116,
-        "mastery": 4,
-        "wait": 3
+        "mastery": 9,
+        "wait": 0
     },
     {
         "word": "古い",
@@ -1283,7 +1283,7 @@
         "sentence": "私は古い車が好きです。",
         "translation": "I like old cars.",
         "rank": 117,
-        "mastery": 1,
+        "mastery": 7,
         "wait": 0
     },
     {
@@ -1294,7 +1294,7 @@
         "sentence": "この絵は美しいです。",
         "translation": "This picture is beautiful.",
         "rank": 118,
-        "mastery": 0,
+        "mastery": 6,
         "wait": 0
     },
     {
@@ -1305,7 +1305,7 @@
         "sentence": "彼は足が長い。",
         "translation": "He has long legs.",
         "rank": 119,
-        "mastery": 0,
+        "mastery": 2,
         "wait": 0
     },
     {
@@ -1316,7 +1316,7 @@
         "sentence": "次はいつ会いましょうか。",
         "translation": "When shall we meet again?",
         "rank": 120,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
@@ -1327,7 +1327,7 @@
         "sentence": "明日、6時に起こしてください。",
         "translation": "Please wake me up tomorrow at six o'clock.",
         "rank": 121,
-        "mastery": 0,
+        "mastery": 1,
         "wait": 0
     },
     {
