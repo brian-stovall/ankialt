@@ -3,8 +3,6 @@ start = None
 errorcount = 0
 globalErrors = set()
 
-
-
 def load():
     data = None
     datafile = '/home/artiste/Desktop/aozora.json'
