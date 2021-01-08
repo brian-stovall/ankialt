@@ -1261,8 +1261,8 @@
         "sentence": "彼女は来月結婚します。",
         "translation": "She's getting married next month.",
         "rank": 115,
-        "mastery": 20,
-        "wait": 16
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "親",
@@ -1272,8 +1272,8 @@
         "sentence": "親の愛は有り難い。",
         "translation": "We're grateful for our parents' love.",
         "rank": 116,
-        "mastery": 20,
-        "wait": 6
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "古い",
@@ -1283,8 +1283,8 @@
         "sentence": "私は古い車が好きです。",
         "translation": "I like old cars.",
         "rank": 117,
-        "mastery": 19,
-        "wait": 6
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "美しい",
@@ -1294,8 +1294,8 @@
         "sentence": "この絵は美しいです。",
         "translation": "This picture is beautiful.",
         "rank": 118,
-        "mastery": 18,
-        "wait": 7
+        "mastery": 21,
+        "wait": 22
     },
     {
         "word": "足",
@@ -1305,8 +1305,8 @@
         "sentence": "彼は足が長い。",
         "translation": "He has long legs.",
         "rank": 119,
-        "mastery": 16,
-        "wait": 4
+        "mastery": 20,
+        "wait": 2
     },
     {
         "word": "次",
@@ -1316,8 +1316,8 @@
         "sentence": "次はいつ会いましょうか。",
         "translation": "When shall we meet again?",
         "rank": 120,
-        "mastery": 15,
-        "wait": 5
+        "mastery": 19,
+        "wait": 2
     },
     {
         "word": "起こす",
@@ -1327,8 +1327,8 @@
         "sentence": "明日、6時に起こしてください。",
         "translation": "Please wake me up tomorrow at six o'clock.",
         "rank": 121,
-        "mastery": 14,
-        "wait": 5
+        "mastery": 18,
+        "wait": 2
     },
     {
         "word": "見せる",
@@ -1338,8 +1338,8 @@
         "sentence": "その写真を見せてください。",
         "translation": "Please show me those pictures.",
         "rank": 122,
-        "mastery": 13,
-        "wait": 5
+        "mastery": 17,
+        "wait": 2
     },
     {
         "word": "娘",
@@ -1349,8 +1349,8 @@
         "sentence": "私の娘はアメリカにいます。",
         "translation": "My daughter is in the United States.",
         "rank": 123,
-        "mastery": 11,
-        "wait": 4
+        "mastery": 16,
+        "wait": 6
     },
     {
         "word": "とても",
@@ -1360,8 +1360,8 @@
         "sentence": "この本はとてもおもしろい。",
         "translation": "This book is very interesting.",
         "rank": 124,
-        "mastery": 10,
-        "wait": 4
+        "mastery": 15,
+        "wait": 6
     },
     {
         "word": "少し",
@@ -1371,8 +1371,8 @@
         "sentence": "少し疲れました。",
         "translation": "I'm a little tired.",
         "rank": 125,
-        "mastery": 9,
-        "wait": 4
+        "mastery": 14,
+        "wait": 7
     },
     {
         "word": "質問",
@@ -1382,8 +1382,8 @@
         "sentence": "質問のある方はどうぞ。",
         "translation": "Please feel free to ask any questions.",
         "rank": 126,
-        "mastery": 6,
-        "wait": 3
+        "mastery": 12,
+        "wait": 4
     },
     {
         "word": "楽しむ",
@@ -1393,8 +1393,8 @@
         "sentence": "今日は一人の時間を楽しみたい。",
         "translation": "Today I would like to enjoy some time to myself.",
         "rank": 127,
-        "mastery": 4,
-        "wait": 2
+        "mastery": 11,
+        "wait": 9
     },
     {
         "word": "色",
@@ -1404,8 +1404,8 @@
         "sentence": "すてきな色のセーターですね。",
         "translation": "That sweater is a wonderful color.",
         "rank": 128,
-        "mastery": 3,
-        "wait": 2
+        "mastery": 10,
+        "wait": 9
     },
     {
         "word": "みんな",
@@ -1415,8 +1415,8 @@
         "sentence": "みんなにお菓子をあげましょう。",
         "translation": "Let's give everyone some sweets.",
         "rank": 129,
-        "mastery": 1,
-        "wait": 1
+        "mastery": 8,
+        "wait": 2
     },
     {
         "word": "取る",
@@ -1426,8 +1426,8 @@
         "sentence": "テストでいい点を取った。",
         "translation": "I got a good grade on the test.",
         "rank": 130,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 6,
+        "wait": 1
     },
     {
         "word": "勉強",
@@ -1437,7 +1437,7 @@
         "sentence": "私は日本語を勉強しています。",
         "translation": "I'm studying Japanese.",
         "rank": 131,
-        "mastery": 0,
+        "mastery": 4,
         "wait": 0
     },
     {
@@ -1448,8 +1448,8 @@
         "sentence": "彼女はイタリア語が出来ます。",
         "translation": "She knows Italian.",
         "rank": 132,
-        "mastery": 0,
-        "wait": 0
+        "mastery": 3,
+        "wait": 3
     },
     {
         "word": "短い",

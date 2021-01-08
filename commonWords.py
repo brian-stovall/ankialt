@@ -25,11 +25,15 @@ def getPreviousErrors():
     return pe
 
 def kitenLookup(target):
-    subprocess.call(['xdotool', 'windowactivate', '--sync', kitenWindowID])
-    subprocess.call(['xdotool', 'key', '--clearmodifiers', 'Ctrl+l'])
-    subprocess.call(['xdotool', 'type', target])
-    subprocess.call(['xdotool', 'key', 'Return'])
-    subprocess.call(['xdotool', 'windowactivate', '--sync', thisWindowID])
+    #sleeptime = 0.3
+    delaytime = '50'
+    #subprocess.call(['xdotool', 'windowactivate', '--sync', kitenWindowID])
+    subprocess.call(['xdotool', 'key', '--window', kitenWindowID, '--clearmodifiers', 'Ctrl+l'])
+    #time.sleep(sleeptime)
+    subprocess.call(['xdotool', 'type', '--window', kitenWindowID, target])
+    #time.sleep(sleeptime)
+    subprocess.call(['xdotool', 'key', '--window', kitenWindowID, 'Return'])
+    #subprocess.call(['xdotool', 'windowactivate', '--sync', thisWindowID])
 
 def begin():
     global thisWindowID
