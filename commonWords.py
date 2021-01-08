@@ -102,7 +102,7 @@ def test(unihan, jsondata, frame = 1):
         input()
         end()
 
-begin()
+#begin()
 
 
 
