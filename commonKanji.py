@@ -5,7 +5,7 @@ globalErrors = set()
 
 def load():
     data = None
-    datafile = '/home/artiste/Desktop/aozora.json'
+    datafile = '/home/artiste/quizlet/aozora-common-kanji.json'
     with open(datafile, 'r') as kanjidata:
         data = kanjidata.read()
     return json.loads(data)
