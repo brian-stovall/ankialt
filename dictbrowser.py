@@ -161,12 +161,15 @@ def c_display_result(value, cedict_result, dframe):
     meaningsFrame.pack()
     dframe.pack()
 
-def termdisplay(unihan, lookup):
+def termdisplay(unihan, kanjiranks, lookup):
     os.system('clear')
     for value in lookup:
         if value in unihan.keys():
+            kanjirank = ''
+            if value in kanjiranks.keys():
+                kanjirank = kanjiranks[value]
             unihan_result = unihan[value]
-            print(value)
+            print(value, kanjirank)
             print('*' * (len(value) + 2))
             for k,v in unihan_result.items():
                 if k != 'onyomi':
@@ -177,10 +180,13 @@ def mainterm():
     unihan = None
     with open('./dicts/unihan.json') as infile:
         unihan=json.loads(infile.read())
+    kanjiranks = None
+    with open('./kanjiranks.json') as infile:
+        kanjiranks=json.loads(infile.read())
     running = True
     while running:
         lookup =input()
-        termdisplay(unihan, lookup)
+        termdisplay(unihan, kanjiranks, lookup)
 
 
 def main(lang='c'):
