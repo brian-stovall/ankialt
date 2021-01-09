@@ -27,9 +27,11 @@ def begin():
     end = None
     jsondata = None
     unihan = getUnihan()
-    choice = input('Study previous errors?')
-    if choice == 'y':
-        jsondata = getPreviousErrors()
+    #choice = input('Study previous errors?')
+    #if choice == 'y':
+    #    jsondata = getPreviousErrors()
+    if False:
+        pass
     else:
         begin = int(input('Start with which entry?')) - 1
         end = int(input('End with which entry?'))
@@ -63,25 +65,30 @@ def test(unihan, jsondata, frame = 1):
         print(entry['definition'])
         if entry['sentence'] is not None:
             print(entry['translation'])
-        for symbol in word:
-            if symbol in unihan.keys():
-                lookup(unihan, symbol)
+        if entry['sentence'] is not None:
+            for char in entry['sentence']:
+                if char in unihan.keys():
+                    lookup(unihan, char)
+        else:
+            for symbol in word:
+                if symbol in unihan.keys():
+                    lookup(unihan, symbol)
         print()
         choice = input('n if not correct - q to quit')
         if 'q' in choice:
             sys.exit(0)
         elif 'n' in choice:
             errorcount += 1
-            errors.append(word)
-            globalErrors.add(word)
-    print('frame', frame, ' errors:', len(errors), ' total:', len(jsondata))
+            #errors.append(entry)
+            #globalErrors.add(entry)
+    print('frame', frame, ' errors:', errorcount, ' total:', len(jsondata))
     if len(errors) > 0:
         input('enter to continue to next frame')
-        test(unihan, errors, frame +1)
+        test(unihan, errorcount, frame +1)
     else:
         elapsed = time.time() - start
         minutes = elapsed / 60.0
-        print('good job! ', minutes, ' min ', errorcount, ' errors')
+        print('good job! ', minutes, ' minutes, ', errorcount, ' errors')
         input()
         end()
 
