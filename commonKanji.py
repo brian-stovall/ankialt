@@ -5,10 +5,10 @@ globalErrors = set()
 
 def load():
     data = None
-    datafile = '/home/artiste/quizlet/aozora-common-kanji.json'
+    datafile = '/home/artiste/quizlet/better-common-kanji.json'
     with open(datafile, 'r') as kanjidata:
         data = kanjidata.read()
-    return json.loads(data)
+    return list(json.loads(data).keys())
 
 def getUnihan():
     unihan = None
@@ -23,6 +23,8 @@ def getPreviousErrors():
     return pe
 
 def begin():
+    global start
+    start = time.time()
     begin = None
     end = None
     jsondata = None
@@ -35,7 +37,7 @@ def begin():
         end = int(input('End with which entry?'))
         jsondata = load()[begin : end]
     random.shuffle(jsondata)
-    test(unihan, jsondata)
+    test(unihan, jsondata, start)
 
 def end():
     global globalErrors
@@ -46,14 +48,12 @@ def lookup(unihan, symbol):
     unidata = unihan[symbol]
     print(symbol, ''.join(unidata['pinyin']), ''.join(unidata['definition']))
 
-def test(unihan, jsondata, frame = 1):
+def test(unihan, jsondata, start, frame = 1):
     global errorcount
-    global start
     errors = []
-    if start == None:
-        start = time.time()
-    for entry in jsondata:
-        symbol = entry[0]
+    task = 0
+    for symbol in jsondata:
+        task += 1
         os.system('clear')
         print(symbol)
         print()
@@ -62,7 +62,8 @@ def test(unihan, jsondata, frame = 1):
         print()
         choice = input('n if not correct - q to quit')
         if 'q' in choice:
-            sys.exit(0)
+            end()
+            sys.exit()
         elif 'n' in choice:
             errorcount += 1
             errors.append(symbol)
@@ -70,13 +71,16 @@ def test(unihan, jsondata, frame = 1):
     print('frame', frame, ' errors:', len(errors), ' total:', len(jsondata))
     if len(errors) > 0:
         input('enter to continue to next frame')
-        test(unihan, errors, frame +1)
+        test(unihan, errors, start, frame +1)
     else:
         elapsed = time.time() - start
         minutes = elapsed / 60.0
         print('good job! ', minutes, ' min ', errorcount, ' errors')
-        input()
-        end()
+        again = input('go again?')
+        if again == 'y':
+            begin()
+        else:
+            end()
 
 begin()
 

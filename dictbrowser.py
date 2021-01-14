@@ -181,7 +181,7 @@ def mainterm():
     with open('./dicts/unihan.json') as infile:
         unihan=json.loads(infile.read())
     kanjiranks = None
-    with open('./kanjiranks.json') as infile:
+    with open('./better-common-kanji.json') as infile:
         kanjiranks=json.loads(infile.read())
     running = True
     while running:
