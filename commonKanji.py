@@ -22,6 +22,10 @@ def getPreviousErrors():
         pe=json.loads(infile.read())
     return pe
 
+def removeNum(string):
+    lst = list(string)
+    return ''.join([char for char in lst if str.isnumeric(char) == False])
+
 def begin():
     global start
     start = time.time()
@@ -47,6 +51,7 @@ def end():
 def lookup(unihan, symbol):
     unidata = unihan[symbol]
     print(symbol, ''.join(unidata['pinyin']), ''.join(unidata['definition']))
+    return removeNum(unidata['pinyin'])
 
 def test(unihan, jsondata, start, frame = 1):
     global errorcount
@@ -57,14 +62,18 @@ def test(unihan, jsondata, start, frame = 1):
         os.system('clear')
         print(symbol)
         print()
-        input()
-        lookup(unihan, symbol)
+        answer = input()
+        correct_answer = removeNum(lookup(unihan, symbol))
+        #print('lookin for', correct_answer, 'removeNum?', removeNum(correct_answer))
+        wasRight = ''
+        if answer != correct_answer:
+            wasRight = 'wrong'
         print()
-        choice = input('n if not correct - q to quit')
+        choice = input(wasRight)
         if 'q' in choice:
             end()
             sys.exit()
-        elif 'n' in choice:
+        elif answer != correct_answer:
             errorcount += 1
             errors.append(symbol)
             globalErrors.add(symbol)
