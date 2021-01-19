@@ -33,7 +33,8 @@ def begin():
     end = None
     jsondata = None
     unihan = getUnihan()
-    choice = input('Study previous errors?')
+    #choice = input('Study previous errors?')
+    choice = 'n'
     if choice == 'y':
         jsondata = getPreviousErrors()
     else:
