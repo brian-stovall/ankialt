@@ -10,21 +10,11 @@ def load():
         data = kanjidata.read()
     return list(json.loads(data).keys())
 
-def getUnihan():
-    unihan = None
-    with open('./dicts/unihan.json') as infile:
-        unihan=json.loads(infile.read())
-    return unihan
-
-def getPreviousErrors():
-    pe = None
-    with open('./lastErrors') as infile:
-        pe=json.loads(infile.read())
-    return pe
-
-def removeNum(string):
-    lst = list(string)
-    return ''.join([char for char in lst if str.isnumeric(char) == False])
+def getKanjiJson():
+    kanjiJson = None
+    with open('./dicts/kanji-json') as infile:
+        kanjiJson=json.loads(infile.read())
+    return kanjiJson
 
 def begin():
     global start
@@ -32,31 +22,24 @@ def begin():
     begin = None
     end = None
     jsondata = None
-    unihan = getUnihan()
-    #choice = input('Study previous errors?')
-    choice = 'n'
-    if choice == 'y':
-        jsondata = getPreviousErrors()
-    else:
-        begin = int(input('Start with which entry?')) - 1
-        end = int(input('End with which entry?'))
-        jsondata = load()[begin : end]
+    kj = getKanjiJson()
+    begin = int(input('Start with which entry?')) - 1
+    end = int(input('End with which entry?'))
+    jsondata = load()[begin : end]
     random.shuffle(jsondata)
-    test(unihan, jsondata, start)
+    test(kj, jsondata, start)
 
 def end():
     global globalErrors
     with open('lastErrors', 'w') as myerrors:
         myerrors.write(json.dumps(list(globalErrors), ensure_ascii=False))
 
-def lookup(unihan, symbol):
-    unidata = unihan[symbol]
-    pinyin = unidata['pinyin']
-    definition =
-    print(symbol, ''.join(unidata['pinyin']), ''.join(unidata['definition']))
-    return removeNum(unidata['pinyin'])
+def lookup(kj, symbol):
+    data = kj[symbol]
+    for key, value in data.items():
+        print(key, value)
 
-def test(unihan, jsondata, start, frame = 1):
+def test(kj, jsondata, start, frame = 1):
     global errorcount
     errors = []
     task = 0
@@ -71,22 +54,17 @@ def test(unihan, jsondata, start, frame = 1):
             if 'q' in answer:
                 end()
                 sys.exit()
-        lookup(unihan, symbol)
+        lookup(kj, symbol)
         input()
 
-    print('frame', frame, ' errors:', len(errors), ' total:', len(jsondata))
-    if len(errors) > 0:
-        input('enter to continue to next frame')
-        test(unihan, errors, start, frame +1)
+    elapsed = time.time() - start
+    minutes = elapsed / 60.0
+    print('good job! ', minutes, ' min ')
+    again = input('go again?')
+    if again == 'y':
+        begin()
     else:
-        elapsed = time.time() - start
-        minutes = elapsed / 60.0
-        print('good job! ', minutes, ' min ', errorcount, ' errors')
-        again = input('go again?')
-        if again == 'y':
-            begin()
-        else:
-            end()
+        end()
 
 begin()
 
