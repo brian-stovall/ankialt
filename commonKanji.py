@@ -5,14 +5,14 @@ globalErrors = set()
 
 def load():
     data = None
-    datafile = '/home/artiste/quizlet/better-common-kanji.json'
+    datafile = './better-common-kanji.json'
     with open(datafile, 'r') as kanjidata:
         data = kanjidata.read()
     return list(json.loads(data).keys())
 
 def getUnihan():
     unihan = None
-    with open('/home/artiste/quizlet/dicts/unihan.json') as infile:
+    with open('./dicts/unihan.json') as infile:
         unihan=json.loads(infile.read())
     return unihan
 
